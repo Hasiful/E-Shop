@@ -30,20 +30,19 @@ hr {
 
 :root{
     --main-color: rgb(189 0 0);
-    --primary-color: #212121;
+    --primary-color: #041826;
     --text-color: #0f172a;
     --color: rgb(15 23 42 / 60%);
     --global-color: #FFFFFF;
 
-    --bg-color: linear-gradient(180deg,#f8fafc,rgba(242,202,252,.11) 34.69%,rgba(250,198,252,.11) 44.06%,rgba(175,183,255,.11) 54.48%,rgba(142,220,200,.07) 64.9%,#f8fafc 97.95%);
-    --primary-bg: rgb(248 250 252/1);
+    --bg-color: #fafafa;
 
-    --border-color: #dee2e6;
+    --border-color: #f2f2f2;
     --transition: all linear 0.3s;
 }
 
 .container{
-    max-width: 1320px;
+    max-width: 1200px;
     width: 100%;
     margin: 0px auto;
     padding: 0px 15px;
@@ -64,7 +63,6 @@ img{
     outline: none;
     font-size: 15px;
     color: var(--color);
-    border-radius: 6px;
 }
 
 .main_btn{
