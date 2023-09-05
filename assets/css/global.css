@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background: #f2f4f8;
+}
+
 a {
     text-decoration: none;
 }
@@ -42,7 +46,7 @@ hr {
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1220px;
     width: 100%;
     margin: 0px auto;
     padding: 0px 15px;

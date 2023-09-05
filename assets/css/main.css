@@ -54,11 +54,11 @@
     flex: 1;
 }
 
-.header_search_form{
+.header_search_form {
     height: 40px;
     width: 100%;
     position: relative;
-    border-radius: 6px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -108,4 +108,69 @@
     color: rgb(214 214 214 / 60%);
     display: block;
     font-weight: 300;
+}
+
+.banner_wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.banner_category{
+    width: 238px;
+    height: 344px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+    background-color: #fff;
+    z-index: 200;
+    border-radius: 12px;
+}
+
+.banner_slider_content{
+    width: calc(100% - 254px);
+    position: relative;
+}
+
+.banner_section .slick-list.draggable{
+    height: 100%;
+}
+
+.banner_section .slick-track{
+    height: 100%;
+}
+
+.banner_section .bannerslider_arrow {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner_section .slick-prev,
+.banner_section .slick-next {
+    height: 50px;
+    width: 24px;
+    border-radius: 0px 5px 5px 0px;
+    background: transparent;
+}
+
+.banner_section .slick-next{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.banner_section .slick-prev::after,
+.banner_section .slick-next::after {
+    color: var(--global-color);
+    background: rgb(250 250 250 / 40%);
+    border: none;
+    border-radius: 0px;
+}
+
+.banner_slider{
+    border-radius: 12px;
+    overflow: hidden;
 }
