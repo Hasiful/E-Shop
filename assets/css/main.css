@@ -117,15 +117,6 @@
     gap: 16px;
 }
 
-.banner_category{
-    width: 238px;
-    height: 344px;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
-    background-color: #fff;
-    z-index: 200;
-    border-radius: 12px;
-}
-
 .banner_slider_content{
     width: calc(100% - 254px);
     position: relative;
@@ -173,4 +164,136 @@
 .banner_slider{
     border-radius: 12px;
     overflow: hidden;
+}
+
+
+.banner_category{
+    width: 238px;
+    height: 344px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+    background-color: #fff;
+    z-index: 200;
+    border-radius: 12px;
+    position: relative;
+}
+
+.category{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.category::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .category::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .category::-webkit-scrollbar-thumb {
+    background: rgb(1 71 155 / 10%); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .category::-webkit-scrollbar-thumb:hover {
+    background: rgb(1 71 155 / 40%); 
+  }
+
+.category_list{
+    padding: 10px 0 12px;
+    height: 100%;
+}
+
+.category_link {
+    padding-left: 8px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.category_text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 27px;
+    color: rgb(15 23 42 / 55%);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.category_image {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: rgb(4 24 38 / 10%);
+    display: grid;
+    place-content: center;
+}
+
+.category_image img{
+    width: 16px;
+}
+
+/* benifits section */
+
+.benifit_section{
+    margin-bottom: 40px;
+}
+
+/* .benifit_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--bg-color);
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+    padding: 15px 20px;
+} */
+
+.benifit_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* .benifit_item {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+} */
+
+.benifit_item {
+    width: calc(25% - 18px);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--global-color);
+    border-radius: 6px;
+    padding: 15px 20px;
+}
+
+.benifit_text {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.benifit_icon {
+    height: 40px;
+    width: 40px;
+    background: var(--main-color);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color: #ffffff;
+    font-size: 17px;
 }
