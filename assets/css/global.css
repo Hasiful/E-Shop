@@ -132,15 +132,13 @@ textarea.input_control {
 /* section title */
 
 .section_title{
-    max-width: 750px;
     width: 100%;
     margin: 0px auto 40px;
-    text-align: center;
 }
 
 .section_heading {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 20px;
+    line-height: 28px;
     color: var(--main-color);
     text-transform: uppercase;
     font-weight: 700;
@@ -148,13 +146,6 @@ textarea.input_control {
 
 .section_heading span{
     color: var(--text-color);
-}
-
-.section_text {
-    margin-top: 10px;
-    font-size: 18px;
-    color: var(--color);
-    font-weight: 500;
 }
 
 /* slick slider */
