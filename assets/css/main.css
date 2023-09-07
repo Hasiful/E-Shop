@@ -241,7 +241,7 @@
 /* benifits section */
 
 .benifit_section{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 /* .benifit_wrapper {
@@ -282,9 +282,10 @@
 }
 
 .benifit_text {
-    font-size: 18px;
-    color: var(--text-color);
-    font-weight: 500;
+    font-size: 17px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-style: italic;   
 }
 
 .benifit_icon {
@@ -296,4 +297,188 @@
     place-content: center;
     color: #ffffff;
     font-size: 17px;
+}
+
+/* best_deals_wrapper */
+
+.best_deals_mainwrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.best_deals_block {
+    width: calc(33.33% - 16px);
+    border-radius: 12px;
+    padding: 15px;
+    position: relative;
+    background: var(--global-color);
+}
+
+.best_deals_image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    background-position: center center;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.best_deals_image img{
+    height: 100%;
+}
+
+.best_deals_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.best_deals_content h3 {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    background-image: -webkit-linear-gradient(82deg,#bd0000 0,#fdd800 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.best_deals_content p {
+    font-size: 1em;
+    color: var(--global-color);
+    margin-bottom: 10px;
+    font-weight: 300;
+    width: 100%;
+    text-shadow: 2px 3px 2px rgb(4 24 38 / 50%);
+}
+
+.shop_btn {
+    color: var(--global-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background: var(--main-color);
+    display: inline-block;
+    max-width: 120px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.best_deals_title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.best_deals_link {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    gap: 4px;
+}
+
+.best_deals_link span i{
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 600;
+}
+
+.best_deals_wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.best_deals_product{
+    width: calc(100% / 3 - 8px);
+    position: relative;
+}
+
+.best_dealsproduct_wrapper{
+    transform: translate(0,0);
+    transition: transform .2s;
+}
+
+.best_deals_product:hover .best_dealsproduct_wrapper {
+    position: absolute;
+    transform: translate(-30%,-10%);
+    width: 240px;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    background: var(--global-color);
+    z-index: 1024;
+    border-radius: 12px;
+}
+
+.deals_product_thumb{
+    cursor: pointer;
+}
+
+.deals_product_info {
+    padding: 0 20px 15px;
+    display: none;
+}
+
+.best_deals_product:hover .deals_product_info{
+    display: block;
+}
+
+.deals_product_name {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.deals_product_price {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-top: 5px;
+}
+
+.groceries_category{
+    width: calc(100% / 3 - 8px);
+    text-align: center;
+}
+
+.groceries_category_image {
+    width: 80px;
+    margin: 0px auto;
+    height: 70px;
+}
+
+.groceries_category_image img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.groceries_category_name {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary-color);
 }
