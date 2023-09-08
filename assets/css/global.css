@@ -137,8 +137,8 @@ textarea.input_control {
 }
 
 .section_heading {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 26px;
     color: var(--main-color);
     text-transform: uppercase;
     font-weight: 700;
