@@ -284,8 +284,7 @@
 .benifit_text {
     font-size: 17px;
     color: var(--primary-color);
-    font-weight: 700;
-    font-style: italic;   
+    font-weight: 700; 
 }
 
 .benifit_icon {
@@ -381,7 +380,6 @@
     font-size: 16px;
     font-weight: 900;
     color: var(--primary-color);
-    font-style: italic;
 }
 
 .best_deals_link {
@@ -660,7 +658,6 @@
     font-size: 14px;
     font-weight: 800;
     color: var(--primary-color);
-    font-style: italic;
 }
 
 .view_btn {
@@ -693,12 +690,13 @@
     margin: 0px auto;
 }
 
-.category_slider_name{
+.category_slider_name {
     text-align: center;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 13px;
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .category_arrow {
