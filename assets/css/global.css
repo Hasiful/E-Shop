@@ -131,9 +131,9 @@ textarea.input_control {
 
 /* section title */
 
-.section_title{
+.section_title {
     width: 100%;
-    margin: 0px auto 40px;
+    margin: 0px auto 20px;
 }
 
 .section_heading {
@@ -177,20 +177,20 @@ textarea.input_control {
     left: 0px;
     height: 100%;
     width: 100%;
+    font-size: 14px;
     color: var(--text-color);
     font-family: "Font Awesome 6 Pro";
-    font-weight: 600;
+    font-weight: 400;
     content: "\f053";
     display: grid;
     place-content: center;
-    background: var(--bg-color);
-    border: 1px solid var(--main-color);
-    border-radius: 6px;
+    background: var(--global-color);
+    border-radius: 5px;
 }
 
 .slick-next::after {
     font-family: "Font Awesome 6 Pro";
-    font-weight: 600;
+    font-weight: 400;
     content: "\f054";
 }
 

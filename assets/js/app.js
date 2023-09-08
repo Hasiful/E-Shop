@@ -19,9 +19,9 @@ $(function (e) {
 // offer
 $(function (e) {
   "use strict";
-  e(".offer_slider").slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
+  e(".categories_slider").slick({
+      slidesToShow: 8,
+      slidesToScroll: 4,
       arrows: true,
       focusOnSelect: !0,
       dots: false,
@@ -29,7 +29,7 @@ $(function (e) {
       autoplaySpeed: 5e3,
       swipe: true,
       swipeToSlide: true,
-      appendArrows: e(".slideroffer_arrow"),
+      appendArrows: e(".category_arrow"),
       responsive: [{
           breakpoint: 1200,
           settings: {
