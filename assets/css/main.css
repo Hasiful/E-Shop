@@ -777,3 +777,17 @@
     border-radius: 12px;
     margin: 0px 6px;
 }
+
+.hot_deals_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hot_deals_product {
+    width: calc(100% / 3 - 11px);
+    border-radius: 12px;
+    overflow: hidden;
+}

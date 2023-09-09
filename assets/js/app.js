@@ -64,7 +64,7 @@ $(function (e) {
 $(function (e) {
   "use strict";
   e(".top_brand_slider").slick({
-      slidesToShow: 8,
+      slidesToShow: 7,
       slidesToScroll: 4,
       arrows: true,
       dots: false,
