@@ -595,7 +595,8 @@
     font-size: 15px;
 }
 
-.product_title a{
+.product_title a,
+.product_deals_title{
     -webkit-box-orient: vertical;
     display: -webkit-box;
     text-decoration: none;
@@ -778,16 +779,37 @@
     margin: 0px 6px;
 }
 
-.hot_deals_wrapper{
+.hot_deals_wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
     flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--primary-color);
 }
 
 .hot_deals_product {
-    width: calc(100% / 3 - 11px);
+    width: calc(100% / 6 - 14px);
     border-radius: 12px;
     overflow: hidden;
+}
+
+.deals_product_image img{
+    min-height: 184px;
+    max-height: 184px;
+}
+
+.product_deals_content {
+    padding: 15px;
+}
+
+.product_deals_content .offer_price{
+    color: var(--global-color);
+}
+
+
+.product_deals_content  .product_deals_title{
+    color: rgb(214 214 214 / 90%);
 }
