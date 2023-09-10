@@ -905,3 +905,9 @@
     border-radius: 6px;
     border: 1px solid rgb(189 0 0 / 20%);
 }
+
+.best_seller_content{
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--global-color);
+}
