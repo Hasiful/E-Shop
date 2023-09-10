@@ -590,9 +590,9 @@
 }
 
 .product_rating ul li span i {
-    color: var(--main-color);
+    color: #ffa20f;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .product_title a,
