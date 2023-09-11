@@ -1,11 +1,23 @@
 /* 400 */ 
-@media(min-width: 400px){}
+@media(min-width: 400px){
+    .cls__trending_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cls__trending_item:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
 
 /* 576 */ 
 @media(min-width: 576px){}
 
 /* 768 */
 @media(min-width: 767px){
+    .cls__trending_wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 /* 1024 */
