@@ -4,7 +4,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .cls__trending_item:first-child {
+    .cls__trending_item:nth-child(3) {
         grid-column: span 2;
         grid-row: span 2;
     }
