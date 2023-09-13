@@ -29,7 +29,7 @@ hr {
 }
 
 .section_padding{
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 :root{
@@ -45,11 +45,11 @@ hr {
     --transition: all linear 0.3s;
 }
 
-.container{
+.container {
     max-width: 1280px;
     width: 100%;
     margin: 0px auto;
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 
 img{
@@ -137,8 +137,8 @@ textarea.input_control {
 }
 
 .section_heading {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--main-color);
     text-transform: uppercase;
     font-weight: 700;

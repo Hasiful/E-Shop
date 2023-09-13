@@ -11,21 +11,162 @@
 }
 
 /* 576 */ 
-@media(min-width: 576px){}
+@media(min-width: 576px){
+    .header_wrapper{
+        align-items: center;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .benifit_item {
+        width: calc(50% - 6px);
+    }
+
+    .flash_product {
+        grid-column: span 1;
+    }
+
+    .hot_deals_product {
+        width: calc(100% / 2 - 8px);
+    }
+
+    
+    .product_section_wrapper .flash_product {
+        width: calc(50% - 8px);
+    }
+
+}
 
 /* 768 */
 @media(min-width: 767px){
     .cls__trending_wrapper {
         grid-template-columns: repeat(4, 1fr);
     }
-}
 
-/* 1024 */
-@media(min-width: 992px){
+    .logo {
+        width: 130px;
+    }
+
+    .header_search_form {
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .section_padding{
+        padding: 30px 0px;
+    }
+
+    .main_header{
+        padding: 15px 0;
+    }
+
+    .best_deals_block:not(:first-child) {
+        width: calc(50% - 12px);
+    }
+
+    .cls__trending_item:not(:nth-child(3)) {
+        max-height: 274px;
+    }
     
+    .cls__trending_item {
+        max-height: 564px;
+    }
+
+    .flashsale_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .flash_banner {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .flash_banner .flash_product_thumb img {
+        object-fit: fill;
+    }
+
+    .section_heading {
+        font-size: 16px;
+    }
+
+    .category_arrow .slick-prev,
+    .category_arrow .slick-next,
+    .brand_sliderarrow .slick-prev,
+    .brand_sliderarrow .slick-next {
+        height: 30px;
+        width: 30px;
+    }
+
+    .count_wrapper ul li {
+        height: 27px;
+        width: 30px;
+    }
+
+    .hot_deals_product {
+        width: calc(100% / 3 - 11px);
+    }
+
+    .product_section_wrapper .flash_product {
+        width: calc(33.33% - 11px);
+    }
+
+    .saller_item {
+        width: calc(100% / 2 - 12px);
+    }
+
+    
+}
+/* 992 */
+@media(min-width: 992px){
+    .banner_category{
+        display: block;
+    }
+
+    .banner_slider_content {
+        width: calc(100% - 254px);
+    }
+    .benifit_wrapper{
+        gap: 24px;
+    }
+
+    .benifit_item {
+        width: calc(25% - 18px);
+    }
+
+    .best_deals_block {
+        width: calc(33.33% - 16px);
+    }
+
+    .best_deals_block:not(:first-child){
+        width: calc(33.33% - 16px);
+    }
+
+    .flashsale_wrapper{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .hot_deals_product {
+        width: calc(100% / 4 - 12px);
+    }
+
+    
+    .product_section_wrapper .flash_product {
+        width: calc(25% - 12px);
+    }
+
+    .saller_item {
+        width: calc(100% / 4 - 18px);
+    }
+
 }
 
 /* 1240 */
 @media(min-width: 1200px){
-    
+    .hot_deals_product {
+        width: calc(100% / 6 - 14px);
+    }
+
+    .product_section_wrapper .flash_product {
+        width: calc(20% - 13px);
+    }
 }

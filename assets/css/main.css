@@ -24,24 +24,21 @@
     font-weight: 300;
 }
 
-.main_header{
-    background: var(--primary-color);
-}
-
 /* logo */
 .main_header{
-    padding: 15px 0;
+    background: var(--primary-color);
+    padding: 10px 0;
 }
 
 .header_wrapper{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 12px;
+    flex-direction: column;
 }
 
 .logo{
-    width: 130px;
+    width: 100px;
 }
 
 .logo a{
@@ -55,10 +52,10 @@
 }
 
 .header_search_form {
-    height: 40px;
+    height: 34px;
     width: 100%;
     position: relative;
-    border-radius: 20px;
+    border-radius: 6px;
     overflow: hidden;
 }
 
@@ -110,6 +107,10 @@
     font-weight: 300;
 }
 
+.banner_section{
+    display: block !important;
+}
+
 .banner_wrapper {
     display: flex;
     align-items: stretch;
@@ -119,7 +120,7 @@
 }
 
 .banner_slider_content{
-    width: calc(100% - 254px);
+    width: 100%;
     position: relative;
 }
 
@@ -162,9 +163,10 @@
     border-radius: 0px;
 }
 
-.banner_slider{
+.banner_slider {
     border-radius: 12px;
     overflow: hidden;
+    min-height: 160px;
 }
 
 
@@ -175,6 +177,7 @@
     background-color: #fff;
     z-index: 200;
     border-radius: 12px;
+    display: none;
 }
 
 .category{
@@ -315,7 +318,7 @@
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 12px;
 }
 
 /* .benifit_item {
@@ -327,7 +330,7 @@
 } */
 
 .benifit_item {
-    width: calc(25% - 18px);
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -360,10 +363,11 @@
     align-items: stretch;
     justify-content: flex-start;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .best_deals_block {
-    width: calc(33.33% - 16px);
+    width: 100%;
     border-radius: 12px;
     padding: 15px;
     position: relative;
@@ -543,6 +547,8 @@
     padding: 12px 20px;
     background: var(--global-color);
     border-radius: 12px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .count_wrapper ul {
@@ -553,8 +559,8 @@
 }
 
 .count_wrapper ul li {
-    height: 30px;
-    width: 36px;
+    height: 27px;
+    width: 30px;
     position: relative;
     display: grid;
     place-content: center;
@@ -576,9 +582,10 @@
     line-height: 20px;
 }
 
-.flashsale_wrapper{
+
+.flashsale_wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
 }
@@ -587,11 +594,12 @@
     background: var(--global-color);
     box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
     border-radius: 6px;
+    grid-column: span 2;
 }
 
 .flash_banner {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -608,7 +616,7 @@
 }
 
 .flash_banner .flash_product_thumb img {
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .flash_product_thumb {
@@ -767,8 +775,8 @@
 .category_arrow .slick-next,
 .brand_sliderarrow .slick-prev,
 .brand_sliderarrow .slick-next {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
     border-radius: 5px;
     border: 1px solid var(--main-color);
     transform: rotate(45deg);
@@ -795,7 +803,7 @@
 }
 
 .product_section_wrapper .flash_product {
-    width: calc(20% - 13px);
+    width: 100%;
     background: transparent;
     box-shadow: unset;
     border: 1px solid #e7e7e7;
@@ -858,7 +866,7 @@
 }
 
 .hot_deals_product {
-    width: calc(100% / 6 - 14px);
+    width: 100%;
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgb(242 242 242 / 20%);
@@ -908,7 +916,7 @@
     border-radius: 6px;
     overflow: hidden;
     border: 1px solid rgb(4 24 38 / 20%);
-    width: calc(100% / 4 - 18px);
+    width: 100%;
 }
 
 .saller_thumb{
@@ -982,13 +990,10 @@
     gap: 16px;
 }
 
-.cls__trending_item:not(:nth-child(3)) {
-    max-height: 274px;
-}
 
 .cls__trending_item {
     position: relative;
-    max-height: 564px;
+    max-height: 274px;
     border-radius: 12px;
     overflow: hidden;
     padding: 10px;
