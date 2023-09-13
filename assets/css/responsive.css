@@ -114,7 +114,10 @@
         width: calc(100% / 2 - 12px);
     }
 
-    
+    .best_deals_product:hover .best_dealsproduct_wrapper {
+        transform: translate(-30%,-10%);
+        width: 240px;
+    }
 }
 /* 992 */
 @media(min-width: 992px){

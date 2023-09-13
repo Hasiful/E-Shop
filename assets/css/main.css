@@ -476,8 +476,8 @@
 
 .best_deals_product:hover .best_dealsproduct_wrapper {
     position: absolute;
-    transform: translate(-30%,-10%);
-    width: 240px;
+    transform: translate(-15%,-10%);
+    width: 200px;
     box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
     background: var(--global-color);
     z-index: 1024;
