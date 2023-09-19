@@ -1088,6 +1088,11 @@
     gap: 6px;
     font-size: 14px;
     color: rgb(126 136 143);
+    transition: var(--transition);
+}
+
+.footer_info_link:hover{
+    color: var(--main-color);
 }
 
 .socket {
@@ -1138,6 +1143,11 @@
     display: inline-block;
     color: rgb(126 136 143);
     font-size: 14px;
+    transition: var(--transition);
+}
+
+.footer_nav ul li a:hover{
+    color: var(--main-color);
 }
 
 .footer_app_title{
@@ -1170,4 +1180,44 @@
 
 .copy_right_text a{
     color: var(--global-color);
+}
+
+.footer_note_block {
+    margin-bottom: 15px;
+}
+
+.footer_note_title {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.footer_noteblock_title {
+    margin-bottom: 5px;
+    color: var(--color);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer_note_text {
+    font-size: 13px;
+    color: var(--color);
+}
+
+.footer_note_link_wrapper {
+    line-height: 1.2;
+}
+
+.footer_note_link_wrapper a{
+    font-size: 13px;
+    color: var(--color);
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.footer_note_link_wrapper a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
 }
