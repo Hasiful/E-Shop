@@ -1033,3 +1033,141 @@
 .video_section_content .section_heading{
     color: var(--global-color);
 }
+
+.footer_section {
+    background: var(--primary-color);
+    position: relative;
+}
+
+.footer_wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer_column {
+    width: 100%;
+}
+
+.footer_column:where(:first-child, :last-child) {
+    width: 100%;
+}
+
+.footer_logo {
+    width: 120px;
+    margin-bottom: 25px;
+}
+
+.footer_logo_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adress_text {
+    font-size: 14px;
+    color: rgb(126 136 143);
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+
+.footer_info_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer_info_link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: rgb(126 136 143);
+}
+
+.socket {
+    background: var(--primary-color);
+}
+
+.socket_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid rgb(242 242 242 / 10%);
+    padding: 15px 0px;
+}
+
+.social ul{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social ul li a {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-content: center;
+    color: var(--main-color);
+    border-radius: 6px;
+    background: var(--global-color);
+}
+
+.footer_nav_title {
+    margin-bottom: 18px;
+    color: var(--global-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer_nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer_nav ul li a,
+.footer_app_title {
+    display: inline-block;
+    color: rgb(126 136 143);
+    font-size: 14px;
+}
+
+.footer_app_title{
+    margin-bottom: 15px;
+}
+
+.footer_app_wrapper{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer_app_image {
+    max-width: 124px;
+    width: 100%;
+}
+
+.payment_footer {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.copy_right_text{
+    display: inline-block;
+    color: rgb(126 136 143);
+    font-size: 14px;
+}
+
+.copy_right_text a{
+    color: var(--global-color);
+}

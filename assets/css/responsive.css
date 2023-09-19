@@ -35,6 +35,10 @@
         width: calc(50% - 8px);
     }
 
+    .footer_column {
+        width: calc(50% - 12px);
+    }
+
 }
 
 /* 768 */
@@ -117,6 +121,14 @@
     .best_deals_product:hover .best_dealsproduct_wrapper {
         transform: translate(-30%,-10%);
         width: 240px;
+    }
+
+    .footer_column {
+        width: calc(20% - 16px);
+    }
+    
+    .footer_column:where(:first-child, :last-child) {
+        width: calc(30% - 20px);
     }
 }
 /* 992 */
