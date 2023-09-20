@@ -173,6 +173,10 @@
         width: calc(100% / 4 - 18px);
     }
 
+    .nested_category_item {
+        width: 82px;
+    }
+
 }
 
 /* 1240 */
@@ -183,5 +187,16 @@
 
     .product_section_wrapper .flash_product {
         width: calc(20% - 13px);
+    }
+
+    .nested_category_item {
+        width: 121px;
+    }
+}
+
+/* 1400 */
+@media(min-width: 1400px){
+    .nested_category_item {
+        width: 137px;   
     }
 }
