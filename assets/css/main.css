@@ -159,6 +159,12 @@
     position: relative;
 }
 
+@media(max-width: 991px){
+    .banner_section {
+        padding-bottom: 0px;
+    }
+}
+
 .banner_section .slick-list.draggable{
     height: 100%;
 }
@@ -201,7 +207,7 @@
 .banner_slider {
     border-radius: 12px;
     overflow: hidden;
-    min-height: 160px;
+    min-height: 180px;
 }
 
 
