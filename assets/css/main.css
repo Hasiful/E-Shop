@@ -92,7 +92,7 @@
         width: 100%;
         height: 60px;
         z-index: 9;
-        background: var(--global-color);
+        background: var(--primary-color);
     }
     
     .header_right_wrapper {
@@ -107,13 +107,8 @@
         text-align: center;
     }
 
-    .header_block_content span,
-    .header_block_content a {
-        color: var(--primary-color) !important;
-    }
-
     .header_block_icon{
-        color: var(--color) !important;
+        color: var(--global-color) !important;
     }
 }
 
