@@ -110,6 +110,10 @@
     .header_block_icon{
         color: var(--global-color) !important;
     }
+
+    .footer_note{
+        margin-bottom: 60px;
+    }
 }
 
 .header_block_icon {
