@@ -1320,3 +1320,133 @@
     color: var(--main-color);
     text-decoration: underline;
 }
+
+.product_details_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--global-color);
+    padding: 20px;
+    gap: 20px;
+}
+
+.pdf_left {
+    width: calc(100% - 370px);
+    display: flex;
+    gap: 24px;
+}
+
+.product_slide{
+    width: 40%;
+}
+
+.product_details_content{
+    width: 60%;
+}
+
+.one_item_product{
+    border: 1px solid var(--border-color);
+}
+
+.button_item_product {
+    background: var(--border-color);
+    padding: 6px 4px;
+} 
+
+.button_product_image {
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.pdf_right{
+    width: 350px;
+}
+
+.dp_name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.product_reveiwer .product_rating{
+    margin: 0px;
+}
+
+.product_reveiwer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pd_rating_average,
+.prodcut_rating_count,
+.prodcut_sold_count {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.dp_product_offer {
+    padding: 7px 20px;
+    border-radius: 6px;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dp_product_offer_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--global-color);
+    line-height: 24px;
+}
+
+.dp_product_offer_time {
+    color: #d6d6d6;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.dp_price_wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dp_offer_price {
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+}
+
+.dp_price_currency {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.dp_old_price {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color);
+    text-decoration: line-through;
+    line-height: 22px;
+}
+
+.dp_offer_parcent {
+    padding: 5px 10px;
+    background: var(--main-color);
+    line-height: 15px;
+    font-size: 12px;
+    color: var(--global-color);
+    border-radius: 15px;
+}
