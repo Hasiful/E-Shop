@@ -277,16 +277,124 @@
                             <div class="dp_price_wrapper">
                                 <div class="dp_offer_price"> <span class="dp_price_currency">BDT</span> 482.00</div>
                                 <div class="dp_old_price"><span>BDT</span> 1494.00</div>
+                                <!-- dp offer parcent -->
                                 <div class="dp_offer_parcent"><span>67</span>% off</div>
                             </div>
-                            <!-- dp offer parcent -->
+                            <div class="dp_class_divide"></div>
+                            <!-- dp product color -->
+                            <div class="dp_product_color">
+                                <!-- title -->
+                                <div class="dp_product_color_title">Color: <span id="dp_product_color"></span></div>
+                                <div class="dp_product_color_content" id="all_color_return">
+                                    <!-- color wrapper -->
+                                    <input type="text" class="dp_product_color_wrapper" value="grey" readonly>
+                                    <!-- color wrapper -->
+                                    <input type="text" class="dp_product_color_wrapper" value="blue" readonly>
+                                    <!-- color wrapper -->
+                                    <input type="text" class="dp_product_color_wrapper" value="black" readonly>
+                                    <!-- color wrapper -->
+                                    <input type="text" class="dp_product_color_wrapper" value="green" readonly>
+                                    <!-- color wrapper -->
+                                    <input type="text" class="dp_product_color_wrapper" value="red" readonly>
+                                </div>
+                                <!-- dp product color content -->
+                            </div>
+                            <!-- dp product size -->
+                            <div class="dp_product_size">
+                                <!-- title -->
+                                <div class="dp_product_size_title">Size: <span id="dp_product_size">0</span></div>
+                                <!-- dp_product_size_content -->
+                                <div class="dp_product_size_content" id="all_size_return">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="36">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="37">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="38">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="39">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="40">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="41">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="42">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="43">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="44">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="45">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="46">
+                                    <!-- size wrapper -->
+                                    <input type="text" class="dp_product_size_wrap" readonly value="47">
+                                </div>
+                            </div>
+                            <!-- whole sell -->
+                            <div class="whole_sell_wrapper">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 - 49 pieces</td>
+                                            <td> 2000 <span>BDT</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>50 - 9999 pieces</td>
+                                            <td>1500 <span>BDT</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10000 - 99998 pieces</td>
+                                            <td>1200 <span>BDT</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <!-- pdf_right -->
                     <div class="pdf_right"> 
                         <!-- product shiping content -->
                         <div class="product_shiping_content">
-                            
+                            <!-- dp_product_note -->
+                            <div class="dp_product_note">
+                                <h3>Short Descreption:</h3>
+                                <ul>
+                                    <li>NVIDIA GeForce RTX 4060 Laptop GPU 8 GB GDDR6</li>
+                                    <li>Intel Core i7 13th Gen 13620H (2.40GHz)</li>
+                                    <li>16GB Memory 1 TB NVMe SSD</li>
+                                </ul>
+                            </div>
+                            <!-- dp product stock -->
+                            <div class="dp_product_stock">
+                                Product Stock: <span>50</span>
+                            </div>
+                            <!-- quantity wrapper -->
+                            <div class="quantity_wrapper">
+                                <h5 class="quantity_title">Quantity</h5>
+                                <!-- inner -->
+                                <div class="quantity_inner">
+                                    <button class="quantity_button"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" readonly class="quantity_input input_control" value="0">
+                                    <button class="quantity_button"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- bye button -->
+                            <div class="dp_product_btn">
+                                <button class="main_btn">Bye Now</button>
+                            </div>
+
+                            <!-- bye button -->
+                            <div class="dp_product_addBtn">
+                                <button class="main_btn">Add To Card</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -445,7 +553,7 @@
         <!-- socket end -->
 
         <!-- footer note -->
-        <div class="footer_note section_padding">           
+        <div class="footer_note section_padding">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
@@ -846,6 +954,8 @@
         <script src="assets/js/slick.min.js"></script>
         <!-- magmific popup -->
         <script src="assets/js/magnific.min.js"></script>
+        <!-- product js -->
+        <script src="assets/js/product.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
     </body>
