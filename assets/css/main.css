@@ -1605,8 +1605,11 @@
     border-radius: 10px;
 }
 
-.quantity_wrapper{
+.quantity_wrapper {
     margin-bottom: 20px;
+    display: flex;
+    align-items: end;
+    gap: 16px;
 }
 
 .quantity_title {
@@ -1651,4 +1654,12 @@
     background: var(--border-color);
     border: 1px solid var(--primary-color);
     width: 100%;
+}
+
+.dp_wish_btn button{
+    height: 32px;
+    width: 40px;
+    background: var(--main-color);
+    color: var(--global-color);
+    border: none;
 }
