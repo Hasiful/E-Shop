@@ -34,6 +34,7 @@ hr {
 
 :root{
     --main-color: rgb(189 0 0);
+    /* --main-color: rgb(31, 189, 0); */
     --primary-color: #041826;
     --text-color: #0f172a;
     --color: rgb(15 23 42 / 60%);
