@@ -1820,3 +1820,25 @@
     max-width: 500px;
     margin-bottom: 20px;
 }
+
+.review_count_title {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.count_parcent{
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.product_rating ul li:last-child i{
+    color: var(--color);
+}
+
+.dp_poduct_review_note{
+    font-size: 15px;
+    color: var(--color);
+    line-height: 21px;
+    font-weight: 400;
+}
