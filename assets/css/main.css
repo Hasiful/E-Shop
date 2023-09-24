@@ -1832,13 +1832,106 @@
     font-weight: 900;
 }
 
-.product_rating ul li:last-child i{
-    color: var(--color);
-}
-
 .dp_poduct_review_note{
     font-size: 15px;
     color: var(--color);
     line-height: 21px;
     font-weight: 400;
+}
+
+.review_info_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-around;
+}
+
+.review_count {
+    width: 45%;
+}
+
+.reveiw_live {
+    width: calc(100% - 45% + 50px);
+}
+
+.rting_live_wrapper .product_rating{
+    margin: 0px;
+}
+
+.rting_live_wrapper .product_rating ul li i{
+    font-size: 11px;
+}
+
+.revie_live_divide{
+    height: 100px;
+    width: 1px;
+    background: var(--border-color);
+}
+
+.rting_live_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rating_parcent_box {
+    height: 6px;
+    max-width: 170px;
+    width: 100%;
+    background: var(--border-color);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rating_parcent_overlay {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    background: rgb(111 116 127);
+}
+
+.product_rating_counting{
+    font-size: 14px;
+    color: var(--color);
+}
+/* four star */
+.four_star ul li:last-child i{
+    color: var(--color);
+}
+
+.four_star .rating_parcent_overlay{
+    width: 15%;
+}
+
+/* three_star */
+
+.three_star ul li:where(:last-child, :nth-child(4)) i{
+    color: var(--color) !important;
+}
+
+.three_star .rating_parcent_overlay{
+    width: 10%;
+}
+
+/* two_star */
+
+.two_star ul li:where(:last-child, :nth-child(4), :nth-child(3)) i{
+    color: var(--color) !important;
+}
+
+.two_star .rating_parcent_overlay{
+    width: 40%;
+}
+
+/* one_star */
+
+.one_star ul li:where(:last-child, :nth-child(4), :nth-child(3), :nth-child(2)) i{
+    color: var(--color) !important;
+}
+
+.one_star .rating_parcent_overlay{
+    width: 5%;
 }
