@@ -26,4 +26,55 @@ function activeProduct(allitem, getvalue){
 activeProduct(getAllSizeChild, productSize)
 activeProduct(getAllColorChild, productColor)
 
+// reveiw collapse
+
+let reviewCollapseBtn = document.getElementById("review_collapse_btn");
+let reviewCollapseForm = document.getElementById("review_collapse_form");
+
+reviewCollapseBtn.addEventListener("click", function() {
+    if (reviewCollapseForm.style.display === "block") {
+        reviewCollapseForm.style.display = "none";
+    } else {
+        reviewCollapseForm.style.display = "block";
+    }
+});
+
+$(document).ready(function() {
+    if (window.File && window.FileList && window.FileReader) {
+      $("#files").on("change", function(e) {
+        var files = e.target.files,
+          filesLength = files.length;
+        for (var i = 0; i < filesLength; i++) {
+          var f = files[i]
+          var fileReader = new FileReader();
+          fileReader.onload = (function(e) {
+            var file = e.target;
+            $("<span class=\"pip\">" +
+              "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+              "<span class=\"remove\">Remove image</span>" +
+              "</span>").insertAfter(".field");
+            $(".remove").click(function(){
+              $(this).parent(".pip").remove();
+            });
+          });
+          fileReader.readAsDataURL(f);
+        }
+      });
+    } else {
+      alert("Your browser doesn't support to File API")
+    }
+  });
+
+  // reply collapse
+  
+  let replyForm = document.getElementById("reply_form");
+  let replyBtn = document.getElementById("reply_btn");
+  
+  replyBtn.addEventListener("click", function() {
+      if (replyForm.style.display === "block") {
+        replyForm.style.display = "none";
+      } else {
+        replyForm.style.display = "block";
+      }
+  });
 

@@ -68,6 +68,7 @@ img{
     outline: none;
     font-size: 15px;
     color: var(--color);
+    display: block;
 }
 
 .main_btn{
