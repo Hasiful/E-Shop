@@ -1843,14 +1843,15 @@
     align-items: center;
     gap: 24px;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .review_count {
-    width: 45%;
+    width: 100%;
 }
 
 .reveiw_live {
-    width: calc(100% - 45% + 50px);
+    width: 100%;
 }
 
 .rting_live_wrapper .product_rating{
@@ -1861,9 +1862,10 @@
     font-size: 11px;
 }
 
-.revie_live_divide{
-    height: 100px;
-    width: 1px;
+
+.revie_live_divide {
+    height: 1px;
+    width: 100%;
     background: var(--border-color);
 }
 
@@ -2114,10 +2116,12 @@
     width: 100px;
 }
 
-.review_item_wrapper{
+.review_item_wrapper {
     display: flex;
     align-items: flex-start;
     gap: 12px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .review_profile_image{
@@ -2132,7 +2136,7 @@
 }
 
 .review_item_right{
-    width: calc(100% - 62px);
+    width: 100%;
 }
 
 .review_name {

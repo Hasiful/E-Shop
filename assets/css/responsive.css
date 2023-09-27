@@ -55,6 +55,15 @@
         width: calc(100% / 2 - 6px);
     }
 
+    
+    .review_item_wrapper {
+        flex-direction: row;
+    }
+
+    .review_item_right{
+        width: calc(100% - 62px);
+    }
+
 }
 
 /* 768 */
@@ -158,6 +167,24 @@
     .product_details_content{
         width: 60%;
     }
+
+    .review_count {
+        width: 45%;
+    }
+    
+    .reveiw_live {
+        width: calc(100% - 45% + 50px);
+    }
+
+    .revie_live_divide{
+        height: 100px;
+        width: 1px;
+    }
+
+    .review_info_wrapper {
+        flex-direction: row;
+    }
+    
 }
 /* 992 */
 @media(min-width: 992px){
