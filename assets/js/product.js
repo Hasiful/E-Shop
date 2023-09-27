@@ -67,14 +67,19 @@ $(document).ready(function() {
 
   // reply collapse
   
-  let replyForm = document.getElementById("reply_form");
-  let replyBtn = document.getElementById("reply_btn");
+  let replyBtn = document.getElementsByClassName("reply_btn");
   
-  replyBtn.addEventListener("click", function() {
-      if (replyForm.style.display === "block") {
-        replyForm.style.display = "none";
-      } else {
-        replyForm.style.display = "block";
-      }
+  [...replyBtn].forEach((replyBtnInner, index) => {
+
+    let replyForm = document.getElementsByClassName("reply_form")[index]
+
+    replyBtnInner.addEventListener("click", function() {
+        if (replyForm.style.display === "block") {
+          replyForm.style.display = "none";
+        } else {
+          replyForm.style.display = "block";
+        }
+    });
   });
+
 
