@@ -11,6 +11,10 @@ body{
     background: #f2f4f8;
 }
 
+.dark-theme {
+    background: black;
+}
+
 a {
     text-decoration: none;
 }
@@ -41,14 +45,13 @@ hr {
     --global-color: #FFFFFF;
 
     --bg-color: #fafafa;
-
     --border-color: #f2f2f2;
     --transition: all linear 0.3s;
 }
 
 .container {
     max-width: 1320px;
-    width: 100%;
+    width: 100%;    
     margin: 0px auto;
     padding: 0px 10px;
 }

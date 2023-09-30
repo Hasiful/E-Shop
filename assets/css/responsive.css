@@ -184,6 +184,10 @@
     .review_info_wrapper {
         flex-direction: row;
     }
+
+    .review_image{
+        width: calc(100% / 4 - 9px);
+    }
     
 }
 /* 992 */
@@ -241,6 +245,10 @@
     .similer_shop_product {
         width: 350px;
     }
+
+    .review_image{
+        width: calc(100% / 5 - 10px);
+    }    
 
 }
 

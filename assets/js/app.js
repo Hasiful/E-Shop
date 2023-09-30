@@ -172,4 +172,31 @@ $(".one_item_product").slick({
 //   type: 'iframe'
 // });
 
+// dark theme
+let darkThemeBtn = document.getElementById("dark_theme")
+let body = document.getElementById("body")
+let ligt_theme = document.getElementById("ligt_theme")
+let dark_theme = document.getElementById("dark_themeicon")
+
+darkThemeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  const isDarkTheme = body.classList.contains("dark-theme");
+  localStorage.setItem("dark-theme", isDarkTheme ? "1" : "0");
+  setTheme()
+});
+
+// set local storage class
+function setTheme() {
+  const isDarkTheme = localStorage.getItem("dark-theme");
+  if (isDarkTheme === "1") {
+    document.body.classList.add("dark-theme");
+    ligt_theme.style.cssText = "display: none"
+    dark_theme.style.cssText = "display: block"
+  } else {
+    document.body.classList.remove("dark-theme");
+    dark_theme.style.cssText = "display: none"
+    ligt_theme.style.cssText = "display: block"
+  }
+}
+setTheme();
 
