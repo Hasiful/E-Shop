@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="assets/css/magnificpopup.css">
         <!-- slick slider -->
         <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- zoom -->
+        <link rel="stylesheet" href="assets/css/xzoom.css">
         <!-- css file link -->
         <link rel="stylesheet" href="assets/css/global.css">
         <link rel="stylesheet" href="assets/css/main.css">
@@ -164,68 +166,27 @@
                         <div class="pdf_left_wrapper">
                             <!-- product slide -->
                             <div class="product_slide">
-                                <!-- one item product -->
-                                <div class="one_item_product">
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image4.jpg" alt="">
+                                <div class="xzoom-container">
+                                    <!-- main image -->
+                                    <img class="xzoom" id="xzoom-default" src="assets/image/productdetails/image1.webp" xoriginal="assets/image/productdetails/image1.webp" />
+
+                                    <!-- slide image -->
+                                    <div class="xzoom-thumbs productpreview_wrapper">
+
+                                        <!-- item -->
+                                        <a href="assets/image/productdetails/image1.webp"><img class="xzoom-gallery" src="assets/image/productdetails/image1.webp"  xpreview="assets/image/productdetails/image1.webp"></a>
+
+                                        <!-- item -->
+                                        <a href="assets/image/productdetails/image3.jpg"><img class="xzoom-gallery" src="assets/image/productdetails/image3.jpg" ></a>
+
+                                        <!-- item -->
+                                        <a href="assets/image/productdetails/image2.jpg"><img class="xzoom-gallery" src="assets/image/productdetails/image2.jpg" ></a>
+                                        
+                                        <!-- item -->
+                                        <a href="assets/image/productdetails/image4.jpg"><img class="xzoom-gallery" src="assets/image/productdetails/image4.jpg" ></a>
+
                                     </div>
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image5.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image1.webp" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image2.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image3.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image4.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="oneitem_product_image">
-                                        <img src="assets/image/productdetails/image5.jpg" alt="">
-                                    </div>
-                                </div>
-                                <!-- button item product -->
-                                <div class="button_item_product">
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image4.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image5.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image1.webp" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image2.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image3.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image4.jpg" alt="">
-                                    </div>
-                                    <!-- image -->
-                                    <div class="button_product_image">
-                                        <img src="assets/image/productdetails/image5.jpg" alt="">
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
                             <!-- product details content -->
                             <div class="product_details_content">
@@ -1544,6 +1505,10 @@
         <script src="assets/js/magnific.min.js"></script>
         <!-- product js -->
         <script src="assets/js/product.js"></script>
+        <!-- zoom js -->
+        <script src="assets/js/xzoom.min.js"></script>
+        <!-- zoom setup -->
+        <script src="assets/js/setup.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
     </body>

@@ -2637,3 +2637,18 @@
 .similer_shop_product_wrapper .flash_product{
     width: 100%;
 }
+
+.xzoom-container{
+    width: 100%;
+}
+
+#xzoom-default{
+    width: 100%;
+}
+
+.productpreview_wrapper{
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 12px;
+}
