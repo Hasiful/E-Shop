@@ -181,7 +181,7 @@ let dark_theme = document.getElementById("dark_themeicon")
 darkThemeBtn.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
   const isDarkTheme = body.classList.contains("dark-theme");
-  localStorage.setItem("dark-theme", isDarkTheme ? "1" : "0");
+    localStorage.setItem("dark-theme", isDarkTheme ? "1" : "0");
   setTheme()
 });
 
@@ -199,4 +199,3 @@ function setTheme() {
   }
 }
 setTheme();
-

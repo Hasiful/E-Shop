@@ -2764,3 +2764,29 @@
     font-weight: 400;
     transition: var(--transition);
 }
+
+.user_dashboard_tab_wrapper{
+    display: flex;
+}
+
+.user_dash_nav{
+    width: 300px;
+}
+
+.user_dash_nav .nav-item{
+    display: block;
+    width: 100%;
+}
+
+.user_dash_nav .nav-item .nav-link {
+    width: 100%;
+    border-radius: 0;
+}
+
+.user_dash_tab{
+    width: calc(100% - 300px);
+}
+
+.user_dash_nav .nav-tabs .nav-link.active{
+
+}

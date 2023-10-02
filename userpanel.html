@@ -1,1 +1,349 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Shop</title>
+        <!-- link shortcut -->
+        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <!-- bootstarp link -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <!-- magnific -->
+        <link rel="stylesheet" href="assets/css/magnificpopup.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+
+        <!-- css file link -->
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">   
+    </head>
+
+    <body>
+        <!-- header section -->
+        <header class="header_section">
+            <!-- top header -->
+            <div class="top_header d-none d-md-block">
+                <!-- container -->
+                <div class="container">
+                    <div class="top_header_wrapper">
+                        <!-- contact -->
+                        <div class="header_contact">
+                            <ul class="d-flex align-content-center gap-3">
+                                <li>
+                                    <a href="tel:01723507989">
+                                        <span><i class="fa-solid fa-phone"></i></span>
+                                        01723507989
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@gmail.com">
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                        info@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- top header left  -->
+                        <div class="top_header_list">
+                            <ul class="d-flex align-items-center justify-content-end gap-3">
+                                <li>
+                                    <a href="">Become a Seller</a>
+                                </li>
+                                <li>
+                                    <a href="">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href=""> Wish List</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main -->
+            <div class="main_header">
+                <div class="container">
+                    <div class="header_wrapper">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="assets/image/white.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- search box -->
+                        <div class="header_search">
+                            <!-- search -->
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="input_control bg-white" placeholder="Search Form Bigbag">
+                                <!-- search button -->
+                                <button type="submit" class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <!-- header right -->
+                        <div class="header_right">
+                            <!-- wrapper -->
+                            <div class="header_right_wrapper">
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-none d-lg-flex align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-solid fa-gift-card"></i></span>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <p class="d-none d-lg-block">Offers</p>
+                                        <span>Latest Offers</span>
+                                    </div>
+                                </a>
+
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-lg-none align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-solid fa-house"></i></span>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <span>Home</span>
+                                    </div>
+                                </a>
+
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-lg-none align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-solid fa-grid-2"></i></span>
+                                    <div class="header_block_content">
+                                        <span>Categories</span>
+                                    </div>
+                                </a>
+
+                                <!-- header block item -->
+                                <div class="header_block_item d-lg-flex align-items-center gap-2">
+                                    <!-- icon -->
+                                    <a href="" class="header_block_icon"><i class="fa-solid fa-user"></i></a>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <p class="d-none d-lg-block">Account</p>
+                                        <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-1">
+                                            <a href="">Register</a>
+                                            <span>or</span>
+                                            <a href="">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-lg-flex align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <p class="d-none d-lg-block">Cart</p>
+                                        <span>Products</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- search toggler -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header section end -->
+        
+        <!-- user dashboard tab -->
+        <section class="user_dashboard_tab section_padding">
+            <div class="container">
+                <!-- tab wrapper -->
+                <div class="user_dashboard_tab_wrapper">
+                    <!-- tab -->
+                    <ul class="user_dash_nav nav nav-tabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#Dashboard">Dashboard</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Profile">Profile</button>
+                        </li>
+                    </ul>
+                    <!-- tab pane -->
+                    <div class="tab-content user_dash_tab">
+                        <div class="tab-pane fade show active" id="Dashboard">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta tenetur numquam obcaecati earum itaque tempora, architecto eveniet iure molestiae quidem aliquid repellat cum iusto dolorum perspiciatis at! Ipsum, commodi autem.
+                        </div>
+                        <div class="tab-pane fade" id="Profile">
+                            uta tenetur numquam obcaecati earum itaque tempora, architecto eveniet iure molestiae quidem aliquid repellat cum iusto dolorum perspiciatis at! Ipsum, commodi autem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- user dashboard tab end -->
+
+        <!-- footer section -->
+        <footer class="footer_section section_padding">
+            <div class="container">
+                <!-- footer wrapper -->
+                <div class="footer_wrapper">
+                    <!-- footer column -->
+                    <div class="footer_column">
+                        <!-- footer logo -->
+                        <div class="footer_logo">
+                            <a href="" class="footer_logo_image">
+                                <img src="assets/image/white.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- adress text -->
+                        <p class="adress_text">
+                            Lutfun Tower(4th Floor),House No.E-13,Middle Badda,Pragati Sarani, Badda, Dhaka, PO : 1212
+                        </p>
+                        <!-- footer info -->
+                        <div class="footer_info">
+                            <!-- list -->
+                            <ul class="footer_info_inner">
+                                <!-- item -->
+                                <li class="footer_info_item">
+                                    <!-- link -->
+                                    <a href="tel:01783225870" class="footer_info_link">
+                                        <!-- icon -->
+                                        <span class="footer_info_icon"><i class="fa-solid fa-phone"></i></span>
+                                        <!-- text -->
+                                        <span class="footer_info_text">01783225870</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer_info_item">
+                                    <!-- link -->
+                                    <a href="mailto:info.eshop@gmail.com" class="footer_info_link">
+                                        <!-- icon -->
+                                        <span class="footer_info_icon"><i class="fa-solid fa-envelope"></i></span>
+                                        <!-- text -->
+                                        <span class="footer_info_text">info.eshop@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer_column">
+                        <!-- footer nav -->
+                        <div class="footer_nav">
+                            <!-- footer nav title -->
+                            <h2 class="footer_nav_title">Information</h2>
+                            <ul>
+                                <li>
+                                    <a href="">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Seller Promises</a>
+                                </li>
+                                <li>
+                                    <a href="">Help center</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer_column">
+                           <!-- footer nav -->
+                           <div class="footer_nav">
+                            <!-- footer nav title -->
+                            <h2 class="footer_nav_title">Services</h2>
+                            <ul>
+                                <li>
+                                    <a href="">Payment Method</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Shipping Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer_column">
+                           <!-- footer nav -->
+                           <div class="footer_nav">
+                            <!-- footer nav title -->
+                            <h2 class="footer_nav_title">Install App</h2>
+                            <!-- app title -->
+                            <div class="footer_app_title">Download Our Mobile Apps -</div>
+                            <!-- wrapper -->
+                            <div class="footer_app_wrapper">
+                                <!-- app image -->
+                                <div class="footer_app_image">
+                                    <img src="assets/image/app-store.svg" alt="">
+                                </div>
+                                <!-- app image -->
+                                <div class="footer_app_image">
+                                    <img src="assets/image/play-store.svg" alt="">
+                                </div>
+                            </div>
+                            <!-- payment -->
+                            <div class="payment_footer">
+                                <img src="assets/image/payment.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
+        <!-- socket -->
+        <div class="socket">
+            <div class="container">
+                <div class="socket_wrapper">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- text -->
+                    <p class="copy_right_text">Copyright &copy 2023. <a href="https://classicit.com.bd/" target="_blank">Classic IT</a> all right reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- socket end -->
+
+        <!-- jquery link -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- slick slider -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- magmific popup -->
+        <script src="assets/js/magnific.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+
+</html>
