@@ -2765,28 +2765,307 @@
     transition: var(--transition);
 }
 
-.user_dashboard_tab_wrapper{
+.user_dashboard_wrapper {
     display: flex;
+    position: relative;
 }
 
-.user_dash_nav{
+.user_dashboard_nav {
     width: 300px;
+    border: 1px solid var(--border-color);
+    background: var(--global-color);
+    position: relative;
+    padding: 15px 0;
+    border-radius: 12px;
 }
 
-.user_dash_nav .nav-item{
-    display: block;
-    width: 100%;
+.user_dashboard_link{
+    padding: 8px 20px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 12px;
+    color: var(--primary-color);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
 
-.user_dash_nav .nav-item .nav-link {
-    width: 100%;
-    border-radius: 0;
+.user_dashboard_link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    height: 0px;
+    width: 5px;
+    background: var(--main-color);
+    transition: var(--transition);
 }
 
-.user_dash_tab{
+.user_dashboard_link.active {
+    background: var(--border-color);
+}
+
+.active.user_dashboard_link::after{
+    height: 100%;
+    top: 0px;
+}
+
+.user_dashboard_link:hover::after{
+    height: 100%;
+    top: 0px;
+}
+
+.user_dashboard_link i{
+    color: var(--color);
+    transition: var(--transition);
+}
+
+.user_profile {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f6ebeb;
+}
+
+.user_profile_image {
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0px auto 10px;
+}
+
+.user_profile_name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color);
+    line-height: 24px;
+}
+
+.user_dashboard_content{
     width: calc(100% - 300px);
+    padding-left: 10px;
 }
 
-.user_dash_nav .nav-tabs .nav-link.active{
+.user_dashboard_header {
+    background: var(--global-color);
+    padding: 9px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
 
+.user_dashboard_title {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 32px;
+    display: inline-block;
+}
+
+.user_dashboard_body {
+    margin-top: 20px;
+    
+}
+
+.dashboard_info_wrapper{
+    background: var(--global-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.dashboard_info_item {
+    width: calc(100% / 4 - 18px);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.dashboar_info_title {
+    font-size: 18px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.dashboar_info_icon {
+    height: 60px;
+    width: 60px;
+    background: var(--border-color);
+    margin: 0 auto 15px;
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+}
+
+.dashboar_info_icon span i {
+    display: flex;
+    font-size: 22px;
+    color: var(--color);
+}
+
+.dashboar_info_count {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color);
+    line-height: 20px;
+    margin-top: 6px;
+}
+
+.dahsboard_sidemap {
+    padding: 20px 0;
+}
+
+.dashbard_sidemap_wrapper,
+.walet_top_wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.dashbard_sidemap_item{
+    width: calc(100% / 4 - 18px);
+    padding: 20px;
+    background: var(--global-color);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.sidemap_icon{
+    margin-bottom: 7px;
+}
+
+.sidemap_icon i{
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-flex;
+    color: var(--main-color);
+}
+
+.sidemap_title {
+    color: var(--color);
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.walet_top{
+    padding-bottom: 20px;
+}
+
+.walet_top_wrapper{
+    align-items: stretch;
+}
+
+.walet_top_balance {
+    background: rgb(189 0 0 / 20%);
+    padding: 20px;
+    border-radius: 12px;
+    width: calc(100% - 324px);
+    text-align: center;
+}
+
+.walet_balance_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.walet_amount {
+    font-size: 42px;
+    line-height: 42px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.walet_add_button {
+    width: 300px;
+    padding: 20px;
+    background: #dce0e5;
+    border-radius: 12px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.walet_add_button span i{
+    font-size: 24px;
+    color: var(--color);
+}
+
+.walet_add_button p{
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.payment_modalbtn{
+    background: var(--main-color);
+    border-radius: 6px;
+    color: var(--global-color);
+}
+
+.walet_payment_wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.walet_payment_item {
+    width: calc(100% / 3 - 11px);
+    position: relative;
+}
+
+.walet_payment_item span {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px 10px;
+    width: 100%;
+    display: block;
+}
+
+.walet_payment_item span img {
+    height: 50px;
+    object-fit: contain;
+    width: unset;
+    max-width: 100%;
+    margin: auto;
+}
+
+.walet_payment_item input {
+    appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.walet_payment_item input:checked ~ span {
+    border-color: rgb(204 204 204);
+    background: #e9e4e4;
+}
+
+.walet_table {
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgb(4 24 38 / 10%);
+    background: var(--global-color);
+}
+
+.table_status{
+    font-size: 12px;
+}
+
+.walet_table table tr th,
+.walet_table table tr td{
+    font-size: 14px;
+    color: var(--color);
 }

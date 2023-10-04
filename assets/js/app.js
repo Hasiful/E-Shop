@@ -172,6 +172,13 @@ $(".one_item_product").slick({
 //   type: 'iframe'
 // });
 
+// prealoader
+
+const preloader = document.querySelector(".preloader")
+window.addEventListener("load", function(){
+  preloader.style.display = "none"
+})
+
 // dark theme
 let darkThemeBtn = document.getElementById("dark_theme")
 let body = document.getElementById("body")
