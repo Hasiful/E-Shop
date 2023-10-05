@@ -2768,13 +2768,15 @@
 .user_dashboard_wrapper {
     display: flex;
     position: relative;
+    align-items: flex-start;
 }
 
 .user_dashboard_nav {
     width: 300px;
     border: 1px solid var(--border-color);
     background: var(--global-color);
-    position: relative;
+    position: sticky;
+    top: 10px;
     padding: 15px 0;
     border-radius: 12px;
 }
@@ -3053,7 +3055,7 @@
     background: #e9e4e4;
 }
 
-.walet_table {
+.dashboard_table {
     padding: 15px;
     border-radius: 12px;
     border: 1px solid rgb(4 24 38 / 10%);
@@ -3064,8 +3066,36 @@
     font-size: 12px;
 }
 
-.walet_table table tr th,
-.walet_table table tr td{
+.dashboard_table table tr th,
+.dashboard_table table tr td{
     font-size: 14px;
     color: var(--color);
+}
+
+.wishlist_product_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: var(--global-color);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.wishlist_product_wrapper .flash_product {
+    width: calc(100% / 5 - 13px);
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #d3d3d3;
+}
+
+.wishlist_remove button {
+    border-radius: 6px;
+    background: var(--main-color);
+    color: var(--global-color);
+    padding: 3px 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 12px;
 }

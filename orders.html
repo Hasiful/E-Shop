@@ -27,8 +27,7 @@
     </head>
 
     <body>
-
-        <!-- praloader -->
+        <!-- preloader -->
         <section class="preloader">
             <div class="prealoader_img">
                 <img src="assets/image/payment/719.gif" alt="">
@@ -186,13 +185,13 @@
                                 </a>
                             </li>
                             <li class="user_dashboard_item">
-                                <a href="" class="user_dashboard_link active"> 
+                                <a href="" class="user_dashboard_link"> 
                                     <span><i class="fa-solid fa-wallet"></i></span>
                                     <span>Walet</span>
                                 </a>
                             </li>
                             <li class="user_dashboard_item">
-                                <a href="" class="user_dashboard_link"> 
+                                <a href="" class="user_dashboard_link active"> 
                                     <span><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
                                     <span>Orders</span>
                                 </a>
@@ -239,87 +238,10 @@
                     <div class="user_dashboard_content">
                         <!-- heading -->
                         <div class="user_dashboard_header">
-                            <h3 class="user_dashboard_title">My Walet</h3>
+                            <h3 class="user_dashboard_title">Orders</h3>
                         </div>
                         <!-- user_dashboard_body -->
                         <div class="user_dashboard_body">
-                            <!-- walet top -->
-                            <div class="walet_top">
-                                <!-- wrapper -->
-                                <div class="walet_top_wrapper">
-                                    <!-- walet balance -->
-                                    <div class="walet_top_balance">
-                                        <div class="walet_balance_title">Wallet Balance</div>
-                                        <p class="walet_amount">$<span>6,510.52</span></p>
-                                    </div>
-                                    <!-- walet button -->
-                                    <div class="walet_add_button" data-bs-target="#paymentmodal" data-bs-toggle="modal">
-                                        <span><i class="fa-solid fa-plus"></i></span>
-                                        <p>Add Balance</p>
-                                    </div>
-                                    <!-- walet payment modal -->
-                                    <div class="modal" id="paymentmodal">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h6 class="modal-title">Payment Method</h6>
-                                                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="walet_payment_wrapper">
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/bkash.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/nagad.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/rocket.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/ssl.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/upay.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/visa.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="main_btn" data-bs-dismiss="modal">Cancel</button>
-                                                    <button type="button" class="main_btn payment_modalbtn">Process</button>
-                                                </div>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- walet table -->
                             <div class="dashboard_table">
                                 <table class="table">
@@ -337,23 +259,7 @@
                                             <td>$<span>18.72</span></td>
                                             <td>Recharge (Club Point Converted)</td>
                                             <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Deducted</span>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -369,7 +275,15 @@
                                             <td>$<span>18.72</span></td>
                                             <td>Recharge (Club Point Converted)</td>
                                             <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Cancel</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -377,7 +291,39 @@
                                             <td>$<span>18.72</span></td>
                                             <td>Recharge (Club Point Converted)</td>
                                             <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Cancel</span>
+                                            </td>
+                                        </tr>  
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
+                                            </td>
+                                        </tr>   
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -391,11 +337,43 @@
                                         <tr>
                                             <td>2022-12-21</td>
                                             <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
+                                            <td>Recharge (Club Point Converted)</td>
                                             <td>
-                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Deducted</span>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Cancel</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Cancel</span>
+                                            </td>
+                                        </tr>  
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Complete</span>
+                                            </td>
+                                        </tr>   
                                         <tr>
                                             <td>2022-12-21</td>
                                             <td>$<span>18.72</span></td>
@@ -404,14 +382,7 @@
                                                 <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Recharge (Club Point Converted)</td>
-                                            <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
-                                            </td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
