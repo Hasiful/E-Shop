@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Shop</title>
+        <!-- link shortcut -->
+        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <!-- bootstarp link -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <!-- magnific -->
+        <link rel="stylesheet" href="assets/css/magnificpopup.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+
+        <!-- css file link -->
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">   
+    </head>
+
+    <body>
+        <!-- preloader -->
+        <section class="preloader">
+            <div class="prealoader_img">
+                <img src="assets/image/payment/719.gif" alt="">
+            </div>
+        </section>
+
+        <!-- header section -->
+        <header class="header_section">
+            <!-- top header -->
+            <div class="top_header d-none d-md-block">
+                <!-- container -->
+                <div class="container">
+                    <div class="top_header_wrapper">
+                        <!-- contact -->
+                        <div class="header_contact">
+                            <ul class="d-flex align-content-center gap-3">
+                                <li>
+                                    <a href="tel:01723507989">
+                                        <span><i class="fa-solid fa-phone"></i></span>
+                                        01723507989
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@gmail.com">
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                        info@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- top header left  -->
+                        <div class="top_header_list">
+                            <ul class="d-flex align-items-center justify-content-end gap-3">
+                                <li>
+                                    <a href="">Become a Seller</a>
+                                </li>
+                                <li>
+                                    <a href="">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href=""> Wish List</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main -->
+            <div class="main_header">
+                <div class="container">
+                    <div class="header_wrapper">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="assets/image/white.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- search box -->
+                        <div class="header_search">
+                            <!-- search -->
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="input_control bg-white" placeholder="Search Form Bigbag">
+                                <!-- search button -->
+                                <button type="submit" class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <!-- header right -->
+                        <div class="header_right">
+                            <!-- wrapper -->
+                            <div class="header_right_wrapper">
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-none d-lg-flex align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-solid fa-gift-card"></i></span>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <p class="d-none d-lg-block">Offers</p>
+                                        <span>Latest Offers</span>
+                                    </div>
+                                </a>
+
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-lg-none align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-solid fa-house"></i></span>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <span>Home</span>
+                                    </div>
+                                </a>
+
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-lg-none align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-solid fa-grid-2"></i></span>
+                                    <div class="header_block_content">
+                                        <span>Categories</span>
+                                    </div>
+                                </a>
+
+                                <!-- header block item -->
+                                <div class="header_block_item d-lg-flex align-items-center gap-2">
+                                    <!-- icon -->
+                                    <a href="" class="header_block_icon"><i class="fa-solid fa-user"></i></a>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <p class="d-none d-lg-block">Account</p>
+                                        <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-1">
+                                            <a href="">Register</a>
+                                            <span>or</span>
+                                            <a href="">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- header block item -->
+                                <a href="#" class="header_block_item d-lg-flex align-items-center gap-2">
+                                    <!-- icon -->
+                                    <span class="header_block_icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                                    <!-- content -->
+                                    <div class="header_block_content">
+                                        <p class="d-none d-lg-block">Cart</p>
+                                        <span>Products</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- search toggler -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header section end -->
+        
+        <!-- user dashboard tab -->
+        <section class="user_dashboard section_padding">
+            <div class="container">
+                <!-- tab wrapper -->
+                <div class="user_dashboard_wrapper">
+                    <!-- nav -->
+                    <div class="user_dashboard_nav">
+                        <!-- user profile -->
+                        <div class="user_profile">
+                            <div class="user_profile_image">
+                                <img src="assets/image/comment.png" alt="">
+                            </div>
+                            <h4 class="user_profile_name">Miss. Lamiya</h4>
+                        </div>
+                        <!-- nav list -->
+                        <ul class="user_dashboard_list">
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link">
+                                    <span><i class="fa-solid fa-grid-2"></i></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-solid fa-wallet"></i></span>
+                                    <span>Walet</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                                    <span>Orders</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-solid fa-heart"></i></span>
+                                    <span>Wish List</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link active"> 
+                                    <span><i class="fa-sharp fa-solid fa-address-book"></i></span>
+                                    <span>Shipping Address</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-solid fa-coins"></i></span>
+                                    <span>Rewards Points</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-solid fa-tags"></i></span>
+                                    <span>Coupons</span>
+                                </a>
+                            </li>
+                            <li class="user_dashboard_item">
+                                <a href="" class="user_dashboard_link"> 
+                                    <span><i class="fa-solid fa-notes"></i></span>
+                                    <span>Purchase History</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- content -->
+                    <div class="user_dashboard_content">
+                        <!-- heading -->
+                        <div class="user_dashboard_header">
+                            <h3 class="user_dashboard_title">Shipping Address</h3>
+                        </div>
+                        <!-- user_dashboard_body -->
+                        <div class="user_dashboard_body">
+                            <!-- profle form -->
+                            <div class="user_address_info">
+                                <!-- header -->
+                                <div class="user_address_header">
+                                    <h6>Address</h6>
+                                    <div class="add_address_btn">
+                                        <button class="main_btn" data-bs-toggle="modal" data-bs-target="#address_modal">Add Address</button>
+                                    </div>
+                                    <!-- address modal -->
+                                    <div class="modal" id="address_modal">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <div class="modal-title">Add Address</div>
+                                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" class="profile_form_wrapper">
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <label for="" class="">Address</label>
+                                                            <textarea name="" class="input_control"></textarea>
+                                                        </div>
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <label for="" class="">Postal Code</label>
+                                                            <input type="number" class="input_control" placeholder="5020">
+                                                        </div>
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <label for="" class="">Country</label>
+                                                            <input type="text" class="input_control" placeholder="Enter Country Name">
+                                                        </div>
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <label for="" class="">State</label>
+                                                            <input type="text" class="input_control" placeholder="Enter State Name">
+                                                        </div>
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <label for="" class="">City</label>
+                                                            <input type="text" class="input_control" placeholder="Enter City Name">
+                                                        </div>
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <label for="" class="">Phone Number</label>
+                                                            <input type="text" class="input_control" placeholder="+0880 17235-07989">
+                                                        </div>
+                                                        <!-- item -->
+                                                        <div class="profile_form_inner">
+                                                            <div class="profile_update_submit">
+                                                                <button class="main_btn">Update</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user_address_wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- user dashboard tab end -->
+
+        <!-- footer section -->
+        <footer class="footer_section section_padding">
+            <div class="container">
+                <!-- footer wrapper -->
+                <div class="footer_wrapper">
+                    <!-- footer column -->
+                    <div class="footer_column">
+                        <!-- footer logo -->
+                        <div class="footer_logo">
+                            <a href="" class="footer_logo_image">
+                                <img src="assets/image/white.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- adress text -->
+                        <p class="adress_text">
+                            Lutfun Tower(4th Floor),House No.E-13,Middle Badda,Pragati Sarani, Badda, Dhaka, PO : 1212
+                        </p>
+                        <!-- footer info -->
+                        <div class="footer_info">
+                            <!-- list -->
+                            <ul class="footer_info_inner">
+                                <!-- item -->
+                                <li class="footer_info_item">
+                                    <!-- link -->
+                                    <a href="tel:01783225870" class="footer_info_link">
+                                        <!-- icon -->
+                                        <span class="footer_info_icon"><i class="fa-solid fa-phone"></i></span>
+                                        <!-- text -->
+                                        <span class="footer_info_text">01783225870</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer_info_item">
+                                    <!-- link -->
+                                    <a href="mailto:info.eshop@gmail.com" class="footer_info_link">
+                                        <!-- icon -->
+                                        <span class="footer_info_icon"><i class="fa-solid fa-envelope"></i></span>
+                                        <!-- text -->
+                                        <span class="footer_info_text">info.eshop@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer_column">
+                        <!-- footer nav -->
+                        <div class="footer_nav">
+                            <!-- footer nav title -->
+                            <h2 class="footer_nav_title">Information</h2>
+                            <ul>
+                                <li>
+                                    <a href="">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Seller Promises</a>
+                                </li>
+                                <li>
+                                    <a href="">Help center</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer_column">
+                           <!-- footer nav -->
+                           <div class="footer_nav">
+                            <!-- footer nav title -->
+                            <h2 class="footer_nav_title">Services</h2>
+                            <ul>
+                                <li>
+                                    <a href="">Payment Method</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Shipping Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer_column">
+                           <!-- footer nav -->
+                           <div class="footer_nav">
+                            <!-- footer nav title -->
+                            <h2 class="footer_nav_title">Install App</h2>
+                            <!-- app title -->
+                            <div class="footer_app_title">Download Our Mobile Apps -</div>
+                            <!-- wrapper -->
+                            <div class="footer_app_wrapper">
+                                <!-- app image -->
+                                <div class="footer_app_image">
+                                    <img src="assets/image/app-store.svg" alt="">
+                                </div>
+                                <!-- app image -->
+                                <div class="footer_app_image">
+                                    <img src="assets/image/play-store.svg" alt="">
+                                </div>
+                            </div>
+                            <!-- payment -->
+                            <div class="payment_footer">
+                                <img src="assets/image/payment.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
+        <!-- socket -->
+        <div class="socket">
+            <div class="container">
+                <div class="socket_wrapper">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- text -->
+                    <p class="copy_right_text">Copyright &copy 2023. <a href="https://classicit.com.bd/" target="_blank">Classic IT</a> all right reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- socket end -->
+
+        <!-- jquery link -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- slick slider -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- magmific popup -->
+        <script src="assets/js/magnific.min.js"></script>
+        <!-- user js -->
+        <script src="assets/js/user.js"></script>
+        <!-- main js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+
+</html>

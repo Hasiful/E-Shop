@@ -3099,3 +3099,117 @@
     width: 100%;
     margin-top: 12px;
 }
+
+.profile_form{
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--global-color);
+}
+
+.profile_form_title {
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.profile_form_wrapper{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile_form_inner label{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+    color: var(--color);
+    font-weight: 500;
+}
+
+.profile_form_inner input{
+    height: 40px;
+    border-radius: 6px;
+}
+
+.profile_form_inner input::placeholder{
+    color: var(--color);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.profile_image_edit{
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.profile_image_uploadview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    border: 1px solid #e7dddd;
+}
+
+
+.profile_upload_btn {
+    height: 36px;
+    max-width: 150px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.profile_image_uploadview img{
+    height: 100%;
+}
+
+.profile_upload_btn .file .file-custom:after{
+    display: none;
+}
+
+.profile_upload_btn .file .file-custom {
+    text-align: center;
+    display: grid;
+    place-content: center;
+    border-width: 1px;
+    background: var(--border-color);
+    border-radius: 6px;
+}
+
+.profile_update_submit button{
+    border-radius: 6px;
+    background: var(--main-color);
+    color: var(--global-color);
+}
+
+.user_address_info{
+    border-radius: 12px;
+    background: var(--global-color);
+    padding: 20px;
+}
+
+.user_address_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.add_address_btn button{
+    padding: 5px 12px;
+    background: var(--main-color);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--global-color);
+}
+
+.profile_form_inner textarea.input_control {
+    height: 80px;
+    padding: 10px 15px;
+}
