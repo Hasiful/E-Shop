@@ -27,8 +27,7 @@
     </head>
 
     <body>
-
-        <!-- praloader -->
+        <!-- preloader -->
         <section class="preloader">
             <div class="prealoader_img">
                 <img src="assets/image/payment/719.gif" alt="">
@@ -186,7 +185,7 @@
                                 </a>
                             </li>
                             <li class="user_dashboard_item">
-                                <a href="./walet.html" class="user_dashboard_link active"> 
+                                <a href="./walet.html" class="user_dashboard_link"> 
                                     <span><i class="fa-solid fa-wallet"></i></span>
                                     <span>Walet</span>
                                 </a>
@@ -222,7 +221,7 @@
                                 </a>
                             </li>
                             <li class="user_dashboard_item">
-                                <a href="./coupons.html" class="user_dashboard_link"> 
+                                <a href="./coupons.html" class="user_dashboard_link active"> 
                                     <span><i class="fa-solid fa-tags"></i></span>
                                     <span>Coupons</span>
                                 </a>
@@ -239,181 +238,80 @@
                     <div class="user_dashboard_content">
                         <!-- heading -->
                         <div class="user_dashboard_header">
-                            <h3 class="user_dashboard_title">My Walet</h3>
+                            <h3 class="user_dashboard_title">Coupons</h3>
                         </div>
                         <!-- user_dashboard_body -->
                         <div class="user_dashboard_body">
-                            <!-- walet top -->
-                            <div class="walet_top">
-                                <!-- wrapper -->
-                                <div class="walet_top_wrapper">
-                                    <!-- walet balance -->
-                                    <div class="walet_top_balance">
-                                        <div class="walet_balance_title">Wallet Balance</div>
-                                        <p class="walet_amount">$<span>6,510.52</span></p>
+                            <!-- wrapper -->
+                            <div class="coupon_wrapper">
+                                
+                               <!-- item 1 -->
+                                <div class="coupon_item">
+                                    <div class="coupon_title">
+                                        <h1>50% Offer</h1>
                                     </div>
-                                    <!-- walet button -->
-                                    <div class="walet_add_button" data-bs-target="#paymentmodal" data-bs-toggle="modal">
-                                        <span><i class="fa-solid fa-plus"></i></span>
-                                        <p>Add Balance</p>
-                                    </div>
-                                    <!-- walet payment modal -->
-                                    <div class="modal" id="paymentmodal">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h6 class="modal-title">Payment Method</h6>
-                                                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="walet_payment_wrapper">
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/bkash.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/nagad.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/rocket.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/ssl.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/upay.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                        <!-- item -->
-                                                        <label for="" class="walet_payment_item">
-                                                            <input type="radio" name="payment">
-                                                            <span class="walet_payment_image">
-                                                                <img src="assets/image/payment/visa.png" alt="">
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="main_btn" data-bs-dismiss="modal">Cancel</button>
-                                                    <button type="button" class="main_btn payment_modalbtn">Process</button>
-                                                </div>
-                                            </div>  
-                                        </div>
+                                    <div class="coupon_input_inner">
+                                        <input type="text" class="input_control myInput" readonly value="GFJK5">
+                                        <button onclick="myFunction(this)">Copy</button>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- walet table -->
-                            <div class="dashboard_table">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Date</th>
-                                            <th>Amount</th>
-                                            <th>Details</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Recharge (Club Point Converted)</td>
-                                            <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Deducted</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Recharge (Club Point Converted)</td>
-                                            <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Recharge (Club Point Converted)</td>
-                                            <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Deducted</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Paid via Discover for recharge</td>
-                                            <td>
-                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2022-12-21</td>
-                                            <td>$<span>18.72</span></td>
-                                            <td>Recharge (Club Point Converted)</td>
-                                            <td>
-                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                                <!-- item 2 -->
+                                <div class="coupon_item">
+                                    <div class="coupon_title">
+                                        <h1>5$ Discount</h1>
+                                    </div>
+                                    <div class="coupon_input_inner">
+                                        <input type="text" class="input_control myInput" readonly value="LKJH6">
+                                        <button onclick="myFunction(this)">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <!-- item 2 -->
+                                <div class="coupon_item">
+                                    <div class="coupon_title">
+                                        <h1>Super Deal 5%</h1>
+                                    </div>
+                                    <div class="coupon_input_inner">
+                                        <input type="text" class="input_control myInput" readonly value="LKYH7">
+                                        <button onclick="myFunction(this)">Copy</button>
+                                    </div>
+                                </div>
+
+                               <!-- item 1 -->
+                                <div class="coupon_item">
+                                    <div class="coupon_title">
+                                        <h1>50% Offer</h1>
+                                    </div>
+                                    <div class="coupon_input_inner">
+                                        <input type="text" class="input_control myInput" readonly value="GFJK5">
+                                        <button onclick="myFunction(this)">Copy</button>
+                                    </div>
+                                </div>
+
+                                <!-- item 2 -->
+                                <div class="coupon_item">
+                                    <div class="coupon_title">
+                                        <h1>5$ Discount</h1>
+                                    </div>
+                                    <div class="coupon_input_inner">
+                                        <input type="text" class="input_control myInput" readonly value="LKJH6">
+                                        <button onclick="myFunction(this)">Copy</button>
+                                    </div>
+                                </div>
+                                
+
+                                <!-- item 2 -->
+                                <div class="coupon_item">
+                                    <div class="coupon_title">
+                                        <h1>Super Deal 5%</h1>
+                                    </div>
+                                    <div class="coupon_input_inner">
+                                        <input type="text" class="input_control myInput" readonly value="LKYH7">
+                                        <button onclick="myFunction(this)">Copy</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -583,6 +481,24 @@
         <script src="assets/js/magnific.min.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
+
+        <script>
+            function myFunction(button) {
+
+                var copyText = button.parentElement.querySelector(".myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); 
+
+                navigator.clipboard.writeText(copyText.value)
+                    .then(function () {
+                        alert("Copied the text: " + copyText.value);
+                    })
+                    .catch(function (error) {
+                        console.error("Unable to copy text: ", error);
+                    });
+            }
+        </script>
+
     </body>
 
 </html>

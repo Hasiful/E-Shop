@@ -3070,6 +3070,7 @@
 .dashboard_table table tr td{
     font-size: 14px;
     color: var(--color);
+    vertical-align: middle;
 }
 
 .wishlist_product_wrapper {
@@ -3199,6 +3200,7 @@
     justify-content: space-between;
     gap: 12px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .add_address_btn button{
@@ -3212,4 +3214,107 @@
 .profile_form_inner textarea.input_control {
     height: 80px;
     padding: 10px 15px;
+}
+
+.user_address_wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.user_address_item {
+    padding: 15px 30px 15px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    width: calc(100% / 3 - 11px);
+    background: var(--bg-color);
+}
+
+.user_address_item p{
+    color: var(--color);
+    font-size: 13px;
+}
+
+/* toast cusmtom design */
+
+.toast-container.toast_container {
+    width: 100px !important;
+    max-width: 107px !important;
+}
+
+.toast-body p{
+    cursor: pointer;
+}
+
+.user_address_item .btn-close {
+    width: 5px !important;
+    height: 5px !important;
+    margin: 0px !important;
+}
+
+.user_address_item .toast-header{
+    padding: 5px 7px;
+}
+
+.user_address_item .toast-body{
+    padding: 7px;
+}
+
+.reward_point_box{
+    margin-bottom: 20px;
+}
+
+.reward_point_box .walet_top_balance{
+    width: 100%;
+}
+
+.coupon_wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.coupon_item {
+    position: relative;
+    padding: 20px 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    width: calc(33.3333% - 11px);
+    background: var(--global-color);
+}
+
+.coupon_title h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.coupon_input_inner {
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.coupon_input_inner input{
+    height: 100%;
+    width: calc(100% - 50px);
+}
+
+.coupon_input_inner button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    width: 54px;
+    background: var(--color);
+    color: var(--global-color);
 }
