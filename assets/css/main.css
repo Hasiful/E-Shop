@@ -2781,6 +2781,39 @@
     border-radius: 12px;
 }
 
+.close_collapse{
+    display: none;
+}
+
+@media(max-width: 991px){
+    .user_dashboard_nav {
+        position: fixed;
+        height: calc(100vh - 60px);
+        top: 0px;
+        left: -100%;
+        overflow: auto;
+        z-index: 999;
+        border-radius: 0px;
+        transition: var(--transition);
+    }
+
+    .user_dashboard_content{
+        width: 100% !important;
+    }
+
+    .close_collapse {
+        height: 30px;
+        width: 30px;
+        background: var(--border-color);
+        border-radius: 6px;
+        margin-left: auto;
+        display: grid;
+        place-content: center;
+        margin-right: 20px;
+    }
+
+}
+
 .user_dashboard_link{
     padding: 8px 20px;
     display: flex;
@@ -2855,6 +2888,18 @@
     padding: 9px 20px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapse_btn {
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-content: center;
+    background: var(--border-color);
+    border-radius: 6px;
 }
 
 .user_dashboard_title {
@@ -2876,20 +2921,20 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 24px;
-    padding: 20px;
+    gap: 12px;
+    padding: 12px;
     border-radius: 12px;
 }
 
 .dashboard_info_item {
-    width: calc(100% / 4 - 18px);
-    padding: 20px;
+    width: calc(100% / 2 - 6px);
+    padding: 15px 6px;
     border: 1px solid var(--border-color);
     border-radius: 12px;
 }
 
 .dashboar_info_title {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--primary-color);
     text-align: center;
 }
@@ -2924,15 +2969,15 @@
 }
 
 .dashbard_sidemap_wrapper,
-.walet_top_wrapper{
+.walet_top_wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 12px;
 }
 
 .dashbard_sidemap_item{
-    width: calc(100% / 4 - 18px);
+    width: calc(100% / 2 - 6px);
     padding: 20px;
     background: var(--global-color);
     border-radius: 12px;
@@ -2968,7 +3013,7 @@
     background: rgb(189 0 0 / 20%);
     padding: 20px;
     border-radius: 12px;
-    width: calc(100% - 324px);
+    width: 100%;
     text-align: center;
 }
 
@@ -2980,14 +3025,14 @@
 }
 
 .walet_amount {
-    font-size: 42px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 32px;
     color: var(--main-color);
     font-weight: 600;
 }
 
 .walet_add_button {
-    width: 300px;
+    width: 100%;
     padding: 20px;
     background: #dce0e5;
     border-radius: 12px;
@@ -3060,6 +3105,12 @@
     border-radius: 12px;
     border: 1px solid rgb(4 24 38 / 10%);
     background: var(--global-color);
+    overflow-x: auto;
+}
+
+
+.dashboard_table table {
+    min-width: 460px;
 }
 
 .table_status{
@@ -3085,7 +3136,7 @@
 }
 
 .wishlist_product_wrapper .flash_product {
-    width: calc(100% / 5 - 13px);
+    width: 100%;
     background: transparent;
     box-shadow: none;
     border: 1px solid #d3d3d3;
@@ -3228,7 +3279,7 @@
     padding: 15px 30px 15px 15px;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    width: calc(100% / 3 - 11px);
+    width: 100%;
     background: var(--bg-color);
 }
 
@@ -3282,7 +3333,7 @@
     padding: 20px 15px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    width: calc(33.3333% - 11px);
+    width: 100%;
     background: var(--global-color);
 }
 
