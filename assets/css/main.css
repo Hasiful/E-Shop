@@ -3369,3 +3369,135 @@
     background: var(--color);
     color: var(--global-color);
 }
+
+/* category page */
+
+.category_banner {
+    height: 270px;
+    width: 100%;
+    background-image: url(../image/shops/7mvnqF5upw3cMFaLN22K3y6XpFasFBf0g4TUPXEJ.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.category_banner::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    background: rgb(4 24 38 / 25%);
+}
+
+.category_banner_content{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.category_banner_heading {
+    font-size: 42px;
+    color: var(--global-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.category_banner_text {
+    color: #ede7e7;
+    font-size: 18px;
+}
+
+.sources_category_wrapper{
+    padding: 20px;
+    background: var(--global-color);
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+}
+
+.sources_category_heading {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.sources_category_item{
+    display: block;
+}
+
+.sources_category_image img{
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    margin: 0px auto 10px;
+}
+
+.sources_category_title{
+    font-size: 14px;
+    color: var(--color);
+    line-height: 14px;
+    text-align: center;
+}
+
+.sources_category {
+    position: relative;
+    margin-bottom: -86px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.sources_style_content {
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--global-color);
+}
+
+.sources_style_wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.sources_style_item {
+    padding: 10px;
+    background: var(--global-color);
+    border-radius: 12px;
+    position: relative;
+    width: calc(100% / 6 - 10px);
+    border: 1px solid var(--border-color);
+}
+
+.sources_style_image {
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+}
+
+.sources_style_image::after{
+    content: "";
+    background: rgba(0,0,0,.04);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sources_style_title{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 600;
+}

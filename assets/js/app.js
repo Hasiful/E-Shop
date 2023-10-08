@@ -106,65 +106,60 @@ $(function (e) {
   })
 });
 
-// slick product details
 
-// package
-$(".one_item_product").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: ".button_item_product",
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+$(function (e) {
+  "use strict";
+  e(".sources_category_slider").slick({
+      slidesToShow: 8,
+      slidesToScroll: 4,
+      arrows: false,
+      dots: false,
+      autoplay: !1,
+      margin: 20,
+      autoplaySpeed: 5e3,
+      swipe: true,
+      swipeToSlide: true,
+      responsive: [{
+          breakpoint: 1200,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 6,
+          }
       },
       {
-        breakpoint: 767,
-        settings: {
-          vertical: false,
-          horizontal: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-  
-  $(".button_item_product").slick({
-    slidesToShow: 5,
-    asNavFor: ".one_item_product",
-    arrows: false,
-    dots: false,
-    focusOnSelect: true,
-    vertical: false,
-    verticalSwiping: true,
-    cssEase: 'linear',
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 5,
-        },
+          breakpoint: 991,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 5,
+          }
       },
       {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 4,
-        },
+          breakpoint: 767,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 4,
+          }
       },
       {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 3,
-        },
+          breakpoint: 576,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 3,
+          }
       },
-    ],
-  });
+      {
+          breakpoint: 400,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 2,
+          }
+      }
+    ]
+  })
+});
+
+
+
 
 // // magnific popup
 

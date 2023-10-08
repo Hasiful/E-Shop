@@ -8,7 +8,6 @@
         grid-column: span 2;
         grid-row: span 2;
     }
-
     
     .wishlist_product_wrapper .flash_product {
         width: calc(100% / 2 - 8px);
@@ -35,7 +34,6 @@
         width: calc(100% / 2 - 8px);
     }
 
-    
     .product_section_wrapper .flash_product {
         width: calc(50% - 8px);
     }
@@ -95,11 +93,11 @@
         font-size: 42px;
         line-height: 42px;
     }
-
 }
 
 /* 768 */
 @media(min-width: 767px){
+    
     .cls__trending_wrapper {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -256,8 +254,7 @@
 
     .coupon_item {
         width: calc(50% - 8px);
-    }
-    
+    } 
 }
 
 /* 992 */
@@ -292,8 +289,7 @@
     .hot_deals_product {
         width: calc(100% / 4 - 12px);
     }
-
-    
+ 
     .product_section_wrapper .flash_product {
         width: calc(25% - 12px);
     }
