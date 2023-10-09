@@ -14,6 +14,20 @@ $(function (e) {
         appendArrows: e(".bannerslider_arrow")
     })
   });
+
+$(function (e) {
+    "use strict";
+    e(".category_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        swipe: true,
+        swipeToSlide: true,
+    })
+  });
   
 
 // offer

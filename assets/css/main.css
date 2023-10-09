@@ -3501,3 +3501,8 @@
     color: var(--primary-color);
     font-weight: 600;
 }
+
+.category_slider_item{
+    border-radius: 12px;
+    overflow: hidden;
+}
