@@ -96,7 +96,7 @@
 }
 
 /* 768 */
-@media(min-width: 767px){
+@media(min-width: 768px){
     
     .cls__trending_wrapper {
         grid-template-columns: repeat(4, 1fr);
