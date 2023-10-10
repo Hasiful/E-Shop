@@ -323,6 +323,10 @@
     .user_address_item {
         width: calc(100% / 2 - 8px);
     }
+
+    .filter_sidebar_content{
+        height: 80vh;
+    }
 }
 
 /* 1240 */

@@ -3515,20 +3515,40 @@
 }
 
 .filter_sidebar {
-    height: auto;
     width: 240px;
     background: var(--global-color);
     border-radius: 12px;
+    position: sticky;
+    top: 10px;
+    padding: 20px;
+    padding-right: 6px;
 }
 
+
 .filter_sidebar_content{
-    padding: 20px;
+    height: calc(80vh - 60px);
+    overflow: auto;
+    padding-right: 10px;
 }
+
+.filter_sidebar_content::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+.filter_sidebar_content::-webkit-scrollbar-track {
+    background-color: var(--border-color);
+    border-radius: 5px;
+}
+
+.filter_sidebar_content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+  
 
 .filter_body {
     width: calc(100% - 264px);
-    background-color: var(--global-color);
-    border-radius: 12px;
 }
 
 .checkbox--tqPns {
@@ -3677,4 +3697,61 @@
     padding: 5px 12px;
     background: var(--main-color);
     border-radius: 4px;
+}
+
+.filter_sidebar_rating li:not(:last-child){
+    margin-bottom: 6px;
+}
+
+.filter_sidebar_rating li a{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filter_sidebar_rating li span{
+    font-size: 16px;
+    color: var(--color);
+    display: block;
+    font-weight: 600;
+}
+
+.filter_sidebar_rating li span i {
+    display: block;
+    font-size: 12px;
+    margin-top: -3px;
+    font-weight: 600;
+    color: #ffa20f;
+}
+
+.start_wrapper_rating{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.filter_header {
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: var(--global-color);
+    margin-bottom: 24px;
+}
+
+.filter_header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter_product_count {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color);
+    line-height: 20px;
+}
+
+.filter_product_count span{
+    color: var(--main-color);
 }
