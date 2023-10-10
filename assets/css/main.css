@@ -3618,7 +3618,7 @@
 }
 
 .filter_sidebar_title {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     color: var(--primary-color);
 }
@@ -3644,4 +3644,37 @@
     padding: 4px 8px;
     border-radius: 4px;
     margin-top: 6px;
+}
+
+.price_search_range {
+    display: flex;
+    align-items: center;
+    gap: 6px 12px;
+    flex-wrap: wrap;
+}
+
+.price_search_item{
+    width: calc(50% - 6px);
+}
+
+.price_search_item input{
+    height: 30px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.price_search_item label{
+    font-size: 14px;
+    color: var(--color);
+    display: block;
+}
+
+.price_range_submit button {
+    border: none;
+    font-size: 14px;
+    color: var(--global-color);
+    line-height: 14px;
+    padding: 5px 12px;
+    background: var(--main-color);
+    border-radius: 4px;
 }
