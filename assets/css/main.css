@@ -3755,3 +3755,24 @@
 .filter_product_count span{
     color: var(--main-color);
 }
+
+.prduct_show_type{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.prduct_show_type span{
+    font-size: 14px;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.prduct_show_type select:focus{
+    box-shadow: none;
+}
+
+.prduct_show_type select{
+    font-size: 14px;
+    color: var(--color);
+}
