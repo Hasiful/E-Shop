@@ -3515,7 +3515,7 @@
 }
 
 .filter_sidebar {
-    height: 400px;
+    height: auto;
     width: 240px;
     background: var(--global-color);
     border-radius: 12px;
@@ -3527,14 +3527,13 @@
 
 .filter_body {
     width: calc(100% - 264px);
-    height: 400px;
     background-color: var(--global-color);
     border-radius: 12px;
 }
 
 .checkbox--tqPns {
     color: var(--color);
-    display: inline-block;
+    display: block;
     font-size: 13px;
     line-height: 18px;
     overflow: hidden;
@@ -3542,6 +3541,10 @@
     user-select: none;
     white-space: nowrap;
     cursor: pointer;
+}
+
+.checkbox--tqPns:not(:last-child) {
+    margin-bottom: 7px;
 }
 
 .ant-checkbox {
@@ -3605,4 +3608,40 @@
     border-left: 2px solid var(--main-color);
     border-top: 2px solid var(--main-color);
     transform: rotate(225deg) scale(1);
+}
+
+.filter_sidebar_block,
+.filter_sidebar_listBlock {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter_sidebar_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.filter_sidebar_list li:not(:last-child){
+    margin-bottom: 7px;
+}
+
+.filter_sidebar_list li a{
+    color: var(--color);
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.load-more-button {
+    border: none;
+    font-size: 14px;
+    color: var(--primary-color);
+    background: var(--border-color);
+    line-height: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 6px;
 }
