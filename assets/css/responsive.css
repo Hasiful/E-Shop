@@ -12,6 +12,7 @@
     .wishlist_product_wrapper .flash_product {
         width: calc(100% / 2 - 8px);
     }
+
 }
 
 /* 576 */ 
@@ -54,10 +55,6 @@
         font-size: 14px;
     }
 
-    .similer_shop_product_wrapper .filter_product {
-        width: calc(100% / 2 - 6px);
-    }
-
     
     .review_item_wrapper {
         flex-direction: row;
@@ -92,6 +89,10 @@
     .walet_amount {
         font-size: 42px;
         line-height: 42px;
+    }
+
+    .similer_shop_product_wrapper .filter_product {
+        width: calc(100% / 3 - 8px);
     }
 }
 
@@ -327,6 +328,11 @@
     .filter_sidebar_content{
         height: 80vh;
     }
+
+    .similer_shop_product_wrapper .filter_product {
+        width: calc(100% / 2 - 6px);
+    }
+
 }
 
 /* 1240 */
