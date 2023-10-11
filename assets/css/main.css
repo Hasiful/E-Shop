@@ -3805,14 +3805,8 @@
 }
 
 .filter_product:hover .filter_product_item {
-    position: absolute;
-    transform: translate(0%,-15%) scale(1.15);
-    width: 100%;
+
     border-color: var(--main-color);
-    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
-    background: var(--global-color);
-    z-index: 1024;
-    border-radius: 12px;
 }
 
 .shop_button{
