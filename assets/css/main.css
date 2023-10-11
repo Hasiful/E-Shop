@@ -969,11 +969,10 @@
 
 .offer_price {
     font-size: 18px;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--main-color);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -984,8 +983,7 @@
 }
 
 .old_price {
-    color: var(--main-color);
-    display: -webkit-box;
+    color: var(--color);
     display: -ms-flexbox;
     display: flex;
     gap: 2px;
@@ -3775,4 +3773,81 @@
 .prduct_show_type select{
     font-size: 14px;
     color: var(--color);
+}
+
+.filter_product_main{
+    padding: 20px;
+    background: var(--global-color);
+    border-radius: 12px;
+}
+
+.filter_product_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.filter_product {
+    width: calc(100% / 5 - 16px);
+    position: relative;
+    min-height: 367px;
+}
+
+.filter_product_item {
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    border-radius: 12px;
+    transition: var(--transition);
+    transform: translate(0,0) scale(1);
+    transition: transform .2s;
+}
+
+.filter_product:hover .filter_product_item {
+    position: absolute;
+    transform: translate(0%,-15%) scale(1.15);
+    width: 100%;
+    border-color: var(--main-color);
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    background: var(--global-color);
+    z-index: 1024;
+    border-radius: 12px;
+}
+
+.shop_button{
+    width: 100%;
+    background: var(--main-color);
+    color: var(--global-color);
+    border-radius: 6px;
+    padding: 4px 15px;
+    font-size: 14px;
+}
+
+.filte_product_content{
+    padding: 15px 10px;
+}
+
+.filter_prdouct_name {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
+
+
+.filter_product_price{
+    margin-bottom: 6px;
+}
+
+.filter_product_price .offer_price {
+    line-height: 18px;
+}
+
+.filte_product_content .product_rating ul li span i{
+    font-size: 12px;
 }
