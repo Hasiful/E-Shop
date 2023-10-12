@@ -3958,6 +3958,8 @@
     border: 1px solid #e7e7e9;
     outline: none;
     text-align: center;
+    font-size: 15px;
+    color: var(--color);
 }
 
 .cart_item_price {
