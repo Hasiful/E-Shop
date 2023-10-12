@@ -30,3 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// siderbar
+
+let collapseBtn = document.getElementById("collapse_btn")
+let closeCollapse = document.getElementById("close_collapse")
+let userNav = document.querySelector(".filter_sidebar")
+
+collapseBtn.addEventListener("click", function(){
+    userNav.style.cssText = "left: 0px"
+})
+
+closeCollapse.addEventListener("click", function(){
+    userNav.style.cssText = "left: -100%"
+})

@@ -13,6 +13,10 @@
         width: calc(100% / 2 - 8px);
     }
 
+    .filter_product {
+        width: calc(100% / 2 - 8px);
+    }
+
 }
 
 /* 576 */ 
@@ -93,6 +97,10 @@
 
     .similer_shop_product_wrapper .filter_product {
         width: calc(100% / 3 - 8px);
+    }
+
+    .filter_product {
+        width: calc(100% / 3 - 11px);
     }
 }
 
@@ -256,6 +264,10 @@
     .coupon_item {
         width: calc(50% - 8px);
     } 
+
+    .filter_product {
+        width: calc(100% / 4 - 12px);
+    }
 }
 
 /* 992 */
@@ -359,6 +371,10 @@
 
     .user_address_item {
         width: calc(100% / 3 - 11px);
+    }
+
+    .filter_product {
+        width: calc(100% / 5 - 13px);
     }
 }
 

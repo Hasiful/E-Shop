@@ -2799,6 +2799,21 @@
         transition: var(--transition);
     }
 
+    .filter_sidebar{
+        position: fixed !important;
+        height: calc(100vh - 60px);
+        top: 0px !important;
+        left: -100%;
+        overflow: auto;
+        z-index: 999;
+        border-radius: 0px !important;
+        transition: var(--transition);
+    }
+
+    .filter_body{
+        width: 100% !important;
+    }
+
     .user_dashboard_content{
         width: 100% !important;
     }
@@ -3794,7 +3809,7 @@
 }
 
 .filter_product {
-    width: calc(100% / 5 - 16px);
+    width: 100%;
     position: relative;
     min-height: 367px;
 }
@@ -3859,10 +3874,27 @@
     align-items: flex-start;
     gap: 24px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cart_product_main {
     width: calc(100% - 344px);
+}
+
+.cart_order_title{
+    padding: 20px;
+    background: var(--global-color);
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.cart_order_title h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.cart_product_list{
     padding: 20px;
     background: var(--global-color);
     border-radius: 12px;
@@ -3870,9 +3902,73 @@
 
 .cart_calculate {
     width: 320px;
-    background: var(--global-color);
-    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
-    border-radius: 12px;
+}
+
+@media(max-width: 991px){
+    .cart_product_main{
+        width: 100%;
+    }
+
+    .filter_sidebar_content{
+        height: 100vh;
+    }
+
+}
+
+
+@media(max-width: 767px){
+    .cart_item_delete {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    
+    .cart_product_content {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 6px;
+    }
+    
+    .cart_item_inner {
+        width: 100% !important;
+        flex-direction: row-reverse;
+    }
+    
+    .cart_product_details{
+        width: 60% !important;
+        margin-bottom: 4px;
+    }
+}
+
+@media(max-width: 576px){
+    .cart_product_image {
+        height: 60px !important;
+        width: 60px !important;
+   }
+
+   .cart_product_content{
+        width: calc(100% - 72px) !important;
+   }
+
+    .cart_product_name {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        margin-bottom: 0px !important;
+        line-height: 16px !important;
+    }
+
+    .cart_old_price,
+    .cart_offer_price{
+        font-size: 12px !important;
+    }
+
+    .cart_quantity button {
+        height: 24px !important;
+    }
+
+    .cart_quantity input {
+        height: 24px !important;
+    }
 }
 
 .cart_product_item {
@@ -3881,6 +3977,7 @@
     justify-content: space-between;
     gap: 12px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .cart_product_item:not(:last-child) {
@@ -3938,6 +4035,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #e7e7e9;
 }
 
 .cart_quantity button {
@@ -3956,6 +4054,8 @@
     width: calc(100% - 72px);
     height: 32px;
     border: 1px solid #e7e7e9;
+    border-bottom: none;
+    border-top: none;
     outline: none;
     text-align: center;
     font-size: 15px;
@@ -3987,10 +4087,14 @@
     border-radius: 6px;
     display: grid;
     place-content: center;
+    color: var(--main-color);
 }
 
 .order_sumury{
     padding: 20px;
+    background: var(--global-color);
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    border-radius: 12px;
 }
 
 .sumury_title {
@@ -4027,4 +4131,50 @@
     padding: 10px 12px;
     text-align: center;
     border-radius: 6px;
+}
+
+.breadcumb_section{
+    padding: 50px 0px;
+    background-color: var(--global-color);
+}
+
+.breadcumb_title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.coupon_input {
+    height: 36px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coupon_input input {
+    height: 100%;
+    width: calc(100% - 90px);
+    border: 1px solid #efeff1;
+    border-radius: 6px;
+    padding: 0px 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.coupon_input button{
+    height: 36px;
+    width: 80px;
+    border: none;
+    background: var(--main-color);
+    color: var(--global-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.add_image{
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 24px;
 }
