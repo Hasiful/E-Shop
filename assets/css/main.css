@@ -3490,7 +3490,7 @@
     background: var(--global-color);
     border-radius: 12px;
     position: relative;
-    width: calc(100% / 6 - 10px);
+    width: 100%;
     border: 1px solid var(--border-color);
 }
 
@@ -3499,6 +3499,7 @@
     position: relative;
     border-radius: 6px;
 }
+
 
 .sources_style_image::after{
     content: "";
@@ -3522,6 +3523,11 @@
 .category_slider_item{
     border-radius: 12px;
     overflow: hidden;
+}
+
+.category_slider_item img{
+    max-height: 220px; 
+    min-height: 150px;
 }
 
 .filter_wrapper{
