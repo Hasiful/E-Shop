@@ -3919,6 +3919,10 @@
         height: 100vh;
     }
 
+    .cart_calculate {
+        width: 100%;
+    }
+
 }
 
 
