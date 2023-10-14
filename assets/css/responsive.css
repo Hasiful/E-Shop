@@ -293,10 +293,22 @@
     .sources_style_item {
         width: calc(100% / 4 - 9px);
     }
+
+    .checkout_left{
+        width: calc(100% - 424px);
+    }
+    
+    .checkout_right{
+        width: 400px;
+    }
 }
 
 /* 992 */
 @media(min-width: 992px){
+    
+    .address_item{
+        width: calc(100% / 2 - 8px);
+    }
     .banner_category{
         display: block;
     }
@@ -372,6 +384,14 @@
 
     .sources_style_item {
         width: calc(100% / 5 - 10px);
+    }
+
+    .checkout_left{
+        width: calc(100% - 524px);
+    }
+    
+    .checkout_right{
+        width: 500px;
     }
 
 }

@@ -3922,7 +3922,6 @@
     .cart_calculate {
         width: 100%;
     }
-
 }
 
 
@@ -4187,4 +4186,115 @@
     overflow: hidden;
     border-radius: 12px;
     margin-top: 24px;
+}
+
+/* checkout page */
+
+.checkout_wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkout_left{
+    width: 100%;
+}
+
+.checkout_right{
+    width: 100%;
+}   
+
+.payment_wrapper{
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--global-color);
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+}
+
+.payment_item {
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+}
+
+.payment_item input {
+    appearance: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.payment_image {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.payment_image img {
+    width: 80px;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.payment_item input:checked ~ .payment_image{
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+}
+
+.checkout_address{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--global-color);
+}
+
+.address_item{
+    width: 100%;
+}
+
+.address_item label{
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.address_item input{
+    border: 1px solid var(--primary-color);
+    outline: none;
+    height: 36px;
+    width: 100%;
+    background: transparent;
+    font-size: 14px;
+    padding: 0px 15px;
+    color: var(--color);
+    border-radius: 6px;
+}
+
+
+.submit_button{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.submit_button button{
+    background: var(--main-color);
+    color: var(--global-color);
+    border-radius: 6px;
+    width: 100%;
 }
