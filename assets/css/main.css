@@ -3818,7 +3818,6 @@
     width: 100%;
     position: relative;
     min-height: 367px;
-    overflow: hidden;
 }
 
 .filte_product_thumb img{
@@ -3831,7 +3830,13 @@
     border-radius: 6px;
     transition: var(--transition);
     position: relative;
-    overflow: hidden;
+    transform: scale(1);
+    transition: var(--transition);
+}
+
+.filter_product_item:hover{
+    transform: scale(1.05);
+    z-index: 9;
 }
 
 .filter_product_item::before,
@@ -3847,27 +3852,27 @@
 }
 
 .filter_product_item::before {
-    top: 0;
-    left: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
 }
 
 .filter_product_item::after {
-    top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
+    top: auto;
 }
 
 .filter_product_item:hover::before {
-    border-top-color: var(--main-color);
-    border-right-color: var(--main-color);
+    border-bottom-color: var(--main-color);
+    border-left-color: var(--main-color);
     transition: width 0.3s ease-out,
-      height 0.3s ease-out 0.3s;
+    height 0.3s ease-out 0.3s;
 }
 
 .filter_product_item:hover::after {
-    border-bottom-color: var(--main-color);
-    border-left-color: var(--main-color);
+    border-top-color: var(--main-color);
+    border-right-color: var(--main-color);
     transition: height 0.3s ease-out,
       width 0.3s ease-out 0.3s;
 }
