@@ -1,5 +1,5 @@
 /* 400 */ 
-@media(min-width: 375px){
+@media(min-width: 370px){
     .cls__trending_wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -324,7 +324,6 @@
         max-height: 200px;
         min-height: 190px;
     }
-
 
     .vendhor_profile_image img {
         height: 150px;
