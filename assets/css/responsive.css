@@ -122,6 +122,24 @@
     .sources_style_item {
         width: calc(100% / 3 - 8px);
     }
+
+    .vendhor_profile_image img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .vendhor_name {
+        font-size: 20px;
+    }
+
+    .vendhor_banner_image img {
+        max-height: 170px;
+        min-height: 160px;
+    }
+
+    .vendhor_info {
+        margin: -40px 0px 0px 7%;
+    }
 }
 
 /* 768 */
@@ -301,6 +319,21 @@
     .checkout_right{
         width: 400px;
     }
+
+    .vendhor_banner_image img {
+        max-height: 200px;
+        min-height: 190px;
+    }
+
+
+    .vendhor_profile_image img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .vendhor_info {
+        margin: -60px 0px 0px 100px;
+    }
 }
 
 /* 992 */
@@ -392,6 +425,11 @@
     
     .checkout_right{
         width: 500px;
+    }
+
+    .vendhor_banner_image img {
+        max-height: 250px;
+        min-height: 240px;
     }
 
 }

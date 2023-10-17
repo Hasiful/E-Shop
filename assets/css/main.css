@@ -4356,3 +4356,46 @@
     border-radius: 6px;
     width: 100%;
 }
+
+.vendhor_banner_image{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.vendhor_banner_image img {
+    max-height: 150px;
+    min-height: 140px;
+}
+
+.vendhor_profile_image img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid var(--primary-color);
+}
+
+.vendhor_info {
+    margin: -25px 0px 0px 7%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.vendhor_info_content {
+    margin-bottom: 20px;
+    margin-left: 16px;
+}
+
+.vendhor_info .product_rating{
+    margin-bottom: 0px;
+}
+
+.vendhor_name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.vhendor_profile.section_padding {
+    padding-bottom: 0px;
+}
