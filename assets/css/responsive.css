@@ -333,6 +333,15 @@
     .vendhor_info {
         margin: -60px 0px 0px 100px;
     }
+
+    .shop_item {
+        background: var(--global-color);
+        width: calc(100% / 4 - 12px);
+        border-radius: 6px;
+        overflow: hidden;
+        display: block;
+        box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    }
 }
 
 /* 992 */
