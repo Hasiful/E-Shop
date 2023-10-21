@@ -4483,3 +4483,87 @@
     color: var(--main-color);
     text-decoration: underline;
 }
+
+.affilate_dash_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.affiliate_walet {
+    padding: 30px;
+    width: calc(100% - 324px);
+    border-radius: 12px;
+    background: rgb(189 0 0 / 20%);
+}
+
+.affiliate_walet_content{
+    position: relative;
+}
+
+.affiliate_walet_content span {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.wallet_balance {
+    font-size: 36px;
+    color: var(--main-color);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.walet_button{
+    border: 1px solid var(--primary-color);
+}
+
+
+.affiliate_dash_point{
+    width: 300px;
+    background: var(--primary-color);
+    padding: 20px;
+    background: #dce0e5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.total_reward_points {
+    font-size: 36px;
+    color: var(--main-color);
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.affiliate_dash_point span{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.affilate_icons {
+    font-size: 24px;
+    height: 46px;
+    width: 46px;
+    display: grid;
+    place-content: center;
+    margin-bottom: 15px;
+    background: rgb(189 0 0 / 20%);
+    border-radius: 50%;
+    color: var(--main-color);
+}
+
+.affilate_icons i{
+    font-weight: 600;
+}
