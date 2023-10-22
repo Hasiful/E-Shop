@@ -4490,6 +4490,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
+    margin-bottom: 20px;
 }
 
 .affiliate_walet {
