@@ -26,7 +26,7 @@
     </head>
 
     <body>
-        
+
         <!-- praloader -->
         <section class="preloader">
             <div class="prealoader_img">
@@ -81,8 +81,8 @@
                     <div class="header_wrapper">
                         <!-- logo -->
                         <div class="logo">
-                            <a href="../../index.html">
-                                <img src="../image/white.svg" alt="">
+                            <a href="./index.html">
+                                <img src="assets/image/white.svg" alt="">
                             </a>
                         </div>
                         <!-- search box -->
@@ -99,7 +99,7 @@
                             <!-- wrapper -->
                             <div class="header_right_wrapper">
                                 <!-- header block item -->
-                                <a href="../../filter.html" class="header_block_item d-none d-lg-flex align-items-center gap-2">
+                                <a href="./filter.html" class="header_block_item d-none d-lg-flex align-items-center gap-2">
                                     <!-- icon -->
                                     <span class="header_block_icon"><i class="fa-solid fa-gift-card"></i></span>
                                     <!-- content -->
@@ -131,20 +131,20 @@
                                 <!-- header block item -->
                                 <div class="header_block_item d-lg-flex align-items-center gap-2">
                                     <!-- icon -->
-                                    <a href="../../userpanel.html" class="header_block_icon"><i class="fa-solid fa-user"></i></a>
+                                    <a href="./userpanel.html" class="header_block_icon"><i class="fa-solid fa-user"></i></a>
                                     <!-- content -->
                                     <div class="header_block_content">
                                         <p class="d-none d-lg-block">Account</p>
                                         <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-1">
-                                            <a href="../../signup.html">Register</a>
+                                            <a href="./signup.html">Register</a>
                                             <span>or</span>
-                                            <a href="../../login.html">Login</a>
+                                            <a href="./login.html">Login</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- header block item -->
-                                <a href="../../cart.html" class="header_block_item d-lg-flex align-items-center gap-2">
+                                <a href="./cart.html" class="header_block_item d-lg-flex align-items-center gap-2">
                                     <!-- icon -->
                                     <span class="header_block_icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
                                     <!-- content -->
@@ -161,7 +161,7 @@
             </div>
         </header>
         <!-- header section end -->
-
+        
         <!-- user dashboard tab -->
         <section class="user_dashboard section_padding">
             <div class="container">
@@ -176,20 +176,20 @@
                         <!-- user profile -->
                         <div class="user_profile">
                             <div class="user_profile_image">
-                                <img src="../image/comment.png" alt="">
+                                <img src="../image/comment2.jpeg" alt="">
                             </div>
                             <h4 class="user_profile_name">Miss. Tania</h4>
                         </div>
                         <!-- nav list -->
                         <ul class="user_dashboard_list">
                             <li class="user_dashboard_item">
-                                <a href="./affiliate.html" class="user_dashboard_link active">
+                                <a href="./affiliate.html" class="user_dashboard_link">
                                     <span><i class="fa-solid fa-grid-2"></i></span>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
                             <li class="user_dashboard_item">
-                                <a href="./affiliatewalet.html" class="user_dashboard_link"> 
+                                <a href="./affiliatewalet.html" class="user_dashboard_link active"> 
                                     <span><i class="fa-solid fa-wallet"></i></span>
                                     <span>Walet</span>
                                 </a>
@@ -199,6 +199,16 @@
                                     <span><i class="fa-solid fa-link"></i></span>
                                     <span>Affilate</span>
                                 </a>
+                                <div class="user_dash_subnav_main">
+                                    <ul class="user_dash_subnav">
+                                        <li>
+                                            <a href="">Affilate System</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Payment History</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="user_dashboard_item">
                                 <a href="" class="user_dashboard_link"> 
@@ -206,7 +216,7 @@
                                     <span>Refund Products</span>
                                 </a>
                             </li>
-   
+    
                             <li class="user_dashboard_item">
                                 <a href="./wishlist.html" class="user_dashboard_link"> 
                                     <span><i class="fa-solid fa-heart"></i></span>
@@ -265,242 +275,181 @@
                             <div class="collapse_btn" id="collapse_btn">
                                 <span class="collapse_icons"><i class="fa-solid fa-bars"></i></span>
                             </div>
-                            <h3 class="user_dashboard_title">Dashboard</h3>
+                            <h3 class="user_dashboard_title">My Walet</h3>
                         </div>
                         <!-- user_dashboard_body -->
                         <div class="user_dashboard_body">
-                            <div class="affilate_dash_wrapper">
-                                <!-- walet -->
-                                <div class="affiliate_walet">
-                                    <div class="affiliate_walet_content">
-                                        <span>Wallet Balance</span>
-                                        <p class="wallet_balance">$1,703.300</p>
-                                        <button class="main_btn walet_button" data-bs-target="#paymentmodal" data-bs-toggle="modal">Recharge Wallet</button>
+                            <!-- walet top -->
+                            <div class="walet_top">
+                                <!-- wrapper -->
+                                <div class="walet_top_wrapper">
+                                    <!-- walet balance -->
+                                    <div class="walet_top_balance">
+                                        <div class="walet_balance_title">Wallet Balance</div>
+                                        <p class="walet_amount">$<span>6,510.52</span></p>
                                     </div>
-                                </div>
-                                <!-- payment modal -->
-                                <div class="modal fade" id="paymentmodal">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h6 class="modal-title">Payment Method</h6>
-                                                <button class="btn-close" data-bs-dismiss="modal"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="walet_payment_wrapper">
-                                                    <!-- item -->
-                                                    <label for="" class="walet_payment_item">
-                                                        <input type="radio" name="payment">
-                                                        <span class="walet_payment_image">
-                                                            <img src="../image/payment/bkash.png" alt="">
-                                                        </span>
-                                                    </label>
-                                                    <!-- item -->
-                                                    <label for="" class="walet_payment_item">
-                                                        <input type="radio" name="payment">
-                                                        <span class="walet_payment_image">
-                                                            <img src="../image/payment/nagad.png" alt="">
-                                                        </span>
-                                                    </label>
-                                                    <!-- item -->
-                                                    <label for="" class="walet_payment_item">
-                                                        <input type="radio" name="payment">
-                                                        <span class="walet_payment_image">
-                                                            <img src="../image/payment/rocket.png" alt="">
-                                                        </span>
-                                                    </label>
-                                                    <!-- item -->
-                                                    <label for="" class="walet_payment_item">
-                                                        <input type="radio" name="payment">
-                                                        <span class="walet_payment_image">
-                                                            <img src="../image/payment/ssl.png" alt="">
-                                                        </span>
-                                                    </label>
-                                                    <!-- item -->
-                                                    <label for="" class="walet_payment_item">
-                                                        <input type="radio" name="payment">
-                                                        <span class="walet_payment_image">
-                                                            <img src="../image/payment/upay.png" alt="">
-                                                        </span>
-                                                    </label>
-                                                    <!-- item -->
-                                                    <label for="" class="walet_payment_item">
-                                                        <input type="radio" name="payment">
-                                                        <span class="walet_payment_image">
-                                                            <img src="../image/payment/visa.png" alt="">
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="main_btn" data-bs-dismiss="modal">Cancel</button>
-                                                <button type="button" class="main_btn payment_modalbtn">Process</button>
-                                            </div>
-                                        </div>  
+                                    <!-- walet button -->
+                                    <div class="walet_add_button" data-bs-target="#paymentmodal" data-bs-toggle="modal">
+                                        <span><i class="fa-solid fa-plus"></i></span>
+                                        <p>Add Balance</p>
                                     </div>
-                                </div>
-                                <!-- modal end -->
-
-                                <!-- affilate  -->
-                                <div class="affiliate_dash_point">
-                                    <p class="affilate_icons"><i class="fa-solid fa-coin"></i></p>
-                                    <span>Total Rewards Points</span>
-                                    <p class="total_reward_points">10985</p>
-                                </div>
-                            </div>
-                            <!-- address -->
-                            <div class="user_address_info">
-                                <!-- header -->
-                                <div class="user_address_header">
-                                    <h6>Address</h6>
-                                    <div class="add_address_btn">
-                                        <button class="main_btn" data-bs-toggle="modal" data-bs-target="#address_modal">Add Address</button>
-                                    </div>
-                                    <!-- address modal -->
-                                    <div class="modal" id="address_modal" aria-hidden="true" style="display: none;">
+                                    <!-- walet payment modal -->
+                                    <div class="modal fade" id="paymentmodal">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <div class="modal-title">Add Address</div>
+                                                    <h6 class="modal-title">Payment Method</h6>
                                                     <button class="btn-close" data-bs-dismiss="modal"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form action="" class="profile_form_wrapper">
+                                                    <div class="walet_payment_wrapper">
                                                         <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <label for="" class="">Address</label>
-                                                            <textarea name="" class="input_control"></textarea>
-                                                        </div>
+                                                        <label for="" class="walet_payment_item">
+                                                            <input type="radio" name="payment">
+                                                            <span class="walet_payment_image">
+                                                                <img src="../../assets/image/payment/bkash.png" alt="">
+                                                            </span>
+                                                        </label>
                                                         <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <label for="" class="">Postal Code</label>
-                                                            <input type="number" class="input_control" placeholder="5020">
-                                                        </div>
+                                                        <label for="" class="walet_payment_item">
+                                                            <input type="radio" name="payment">
+                                                            <span class="walet_payment_image">
+                                                                <img src="../../assets/image/payment/nagad.png" alt="">
+                                                            </span>
+                                                        </label>
                                                         <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <label for="" class="">Country</label>
-                                                            <input type="text" class="input_control" placeholder="Enter Country Name">
-                                                        </div>
+                                                        <label for="" class="walet_payment_item">
+                                                            <input type="radio" name="payment">
+                                                            <span class="walet_payment_image">
+                                                                <img src="../../assets/image/payment/rocket.png" alt="">
+                                                            </span>
+                                                        </label>
                                                         <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <label for="" class="">State</label>
-                                                            <input type="text" class="input_control" placeholder="Enter State Name">
-                                                        </div>
+                                                        <label for="" class="walet_payment_item">
+                                                            <input type="radio" name="payment">
+                                                            <span class="walet_payment_image">
+                                                                <img src="../../assets/image/payment/ssl.png" alt="">
+                                                            </span>
+                                                        </label>
                                                         <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <label for="" class="">City</label>
-                                                            <input type="text" class="input_control" placeholder="Enter City Name">
-                                                        </div>
+                                                        <label for="" class="walet_payment_item">
+                                                            <input type="radio" name="payment">
+                                                            <span class="walet_payment_image">
+                                                                <img src="../../assets/image/payment/upay.png" alt="">
+                                                            </span>
+                                                        </label>
                                                         <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <label for="" class="">Phone Number</label>
-                                                            <input type="text" class="input_control" placeholder="+0880 17235-07989">
-                                                        </div>
-                                                        <!-- item -->
-                                                        <div class="profile_form_inner">
-                                                            <div class="profile_update_submit">
-                                                                <button class="main_btn">Update</button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                        <label for="" class="walet_payment_item">
+                                                            <input type="radio" name="payment">
+                                                            <span class="walet_payment_image">
+                                                                <img src="../../assets/image/payment/visa.png" alt="">
+                                                            </span>
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="main_btn" data-bs-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="main_btn payment_modalbtn">Process</button>
+                                                </div>
+                                            </div>  
                                         </div>
                                     </div>
                                 </div>
-                                <!-- user wrapper -->
-                                <div class="user_address_wrapper">
-                                    <!-- user address item -->
-                                    <div class="user_address_item position-relative">
-                                        <p>House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230</p>
-                                        <p>5020</p>
-                                        <p>Bangladesh</p>
-                                        <p>Dhaka</p>
-                                        <p>01723507989</p>
-                                        <div class="position-absolute top-0 end-0">
-                                            <button type="button" class="btn liveToastBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-
-                                            <div class="toast-container toast_container">
-                                                <div class="toast liveToast">
-                                                    <div class="toast-header">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                                                    </div>
-                                                    <div class="toast-body">
-                                                        <p>Edit</p>
-                                                        <p>Delete</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!-- user address item -->
-                                    <div class="user_address_item position-relative">
-                                        <p>House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230</p>
-                                        <p>5020</p>
-                                        <p>Bangladesh</p>
-                                        <p>Dhaka</p>
-                                        <p>01723507989</p>
-                                        <div class="position-absolute top-0 end-0">
-                                            <button type="button" class="btn liveToastBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                            <div class="toast-container toast_container">
-                                                <div class="toast liveToast">
-                                                    <div class="toast-header">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                                                    </div>
-                                                    <div class="toast-body">
-                                                        <p>Edit</p>
-                                                        <p>Delete</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!-- user address item -->
-                                    <div class="user_address_item position-relative">
-                                        <p>House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230</p>
-                                        <p>5020</p>
-                                        <p>Bangladesh</p>
-                                        <p>Dhaka</p>
-                                        <p>01723507989</p>
-                                        <div class="position-absolute top-0 end-0">
-                                            <button type="button" class="btn liveToastBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-
-                                            <div class="toast-container toast_container">
-                                                <div class="toast liveToast">
-                                                    <div class="toast-header">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                                                    </div>
-                                                    <div class="toast-body">
-                                                        <p>Edit</p>
-                                                        <p>Delete</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!-- user address item -->
-                                    <div class="user_address_item position-relative">
-                                        <p>House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230</p>
-                                        <p>5020</p>
-                                        <p>Bangladesh</p>
-                                        <p>Dhaka</p>
-                                        <p>01723507989</p>
-                                        <div class="position-absolute top-0 end-0">
-                                            <button type="button" class="btn liveToastBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                            <div class="toast-container toast_container">
-                                                <div class="toast liveToast">
-                                                    <div class="toast-header">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                                                    </div>
-                                                    <div class="toast-body">
-                                                        <p>Edit</p>
-                                                        <p>Delete</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </div>
+                            </div>
+                            <!-- walet table -->
+                            <div class="dashboard_table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Details</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Deducted</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-danger text-light py-1 px-2 rounded-2">Deducted</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Paid via Discover for recharge</td>
+                                            <td>
+                                                <span class="table_status bg-warning text-light py-1 px-2 rounded-2">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-12-21</td>
+                                            <td>$<span>18.72</span></td>
+                                            <td>Recharge (Club Point Converted)</td>
+                                            <td>
+                                                <span class="table_status bg-success text-white py-1 px-2 rounded-2">Added</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -519,7 +468,7 @@
                         <!-- footer logo -->
                         <div class="footer_logo">
                             <a href="" class="footer_logo_image">
-                                <img src="../image/white.svg" alt="">
+                                <img src="assets/image/white.svg" alt="">
                             </a>
                         </div>
                         <!-- adress text -->
@@ -615,16 +564,16 @@
                             <div class="footer_app_wrapper">
                                 <!-- app image -->
                                 <div class="footer_app_image">
-                                    <img src="../image/app-store.svg" alt="">
+                                    <img src="assets/image/app-store.svg" alt="">
                                 </div>
                                 <!-- app image -->
                                 <div class="footer_app_image">
-                                    <img src="../image/play-store.svg" alt="">
+                                    <img src="assets/image/play-store.svg" alt="">
                                 </div>
                             </div>
                             <!-- payment -->
                             <div class="payment_footer">
-                                <img src="../image/payment.png" alt="">
+                                <img src="assets/image/payment.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -670,21 +619,10 @@
         <script src="../js/magnific.min.js"></script>
         <!-- admin js -->
         <script src="../js/admin.js"></script>
+        <!-- affiliate js -->
+        <script src="../js/affiliate.js"></script>
         <!-- main js -->
         <script src="../js/app.js"></script>
-
-        <!-- toast triggers -->
-        <script>
-            const toastTriggers = document.querySelectorAll('.liveToastBtn');
-            toastTriggers.forEach((toastTrigger) => {
-                const addressItem = toastTrigger.closest('.user_address_item');
-                const toastContainer = addressItem.querySelector('.toast');
-                const toastInstance = new bootstrap.Toast(toastContainer);
-                toastTrigger.addEventListener('click', () => {
-                    toastInstance.show();
-                });
-            });
-        </script>
     </body>
 
 </html>
